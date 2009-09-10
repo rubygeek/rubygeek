@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/appengine-local-runtime-shared.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/geronimo-el_1.0_spec-1.0.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/geronimo-jsp_2.1_spec-1.0.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/geronimo-servlet_2.5_spec-1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/jsp/repackaged-appengine-ant-1.6.5.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/jsp/repackaged-appengine-ant-launcher-1.6.5.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/jsp/repackaged-appengine-commons-el-1.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/jsp/repackaged-appengine-commons-logging-1.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/jsp/repackaged-appengine-jasper-compiler-5.0.28.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/shared/jsp/repackaged-appengine-jasper-runtime-5.0.28.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/user/appengine-api-1.0-sdk-1.2.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/user/orm/datanucleus-appengine-1.0.2.final.jar" sourcepath="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/src/orm/datanucleus-appengine-1.0.2.final-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/user/orm/datanucleus-core-1.1.4-gae.jar" sourcepath="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/src/orm/datanucleus-core-1.1.4-gae-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/user/orm/datanucleus-jpa-1.1.4.jar" sourcepath="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/src/orm/datanucleus-jpa-1.1.4-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/user/orm/geronimo-jpa_3.0_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/user/orm/geronimo-jta_1.1_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/user/orm/jdo2-api-2.3-ea.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/lib/appengine-tools-api.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/nstowe/Downloads/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.2.2.v200907131030/appengine-java-sdk-1.2.2/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER/GWT (1)"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
