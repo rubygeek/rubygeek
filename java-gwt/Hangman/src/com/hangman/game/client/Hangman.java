@@ -1,7 +1,5 @@
 package com.hangman.game.client;
 
-import java.util.HashMap;
-
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -14,6 +12,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
+import com.hangman.game.dao.Game;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -83,10 +82,11 @@ public class Hangman implements EntryPoint {
 			 */
 			private void sendGuessToServer() {
 				sendButton.setEnabled(false);
-				String word = wordField.getText();
-				String guess = guessField.getText();
-				guessService.sendGuess(guess,
-						new AsyncCallback<String>() {
+				Game game = new Game();
+				game.addGuess(guessField.getText());
+				game.setWord(wordField.getText());
+				guessService.sendGuess(game,
+						new AsyncCallback<Game>() {
 							public void onFailure(Throwable caught) {
 								// Show the RPC error message to the user
 								serverResponseLabel
@@ -96,7 +96,7 @@ public class Hangman implements EntryPoint {
 							}
 
 							public void onSuccess(Game result) {
-								wordField.setText(result);
+								wordField.setText(result.getWord());
 							}
 						});
 			}
