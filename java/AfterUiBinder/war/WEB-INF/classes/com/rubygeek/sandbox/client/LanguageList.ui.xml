@@ -1,0 +1,11 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+    xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:VerticalPanel>
+      <g:Label>Choose a language:</g:Label>
+      <g:CheckBox ui:field="rubyCheck" formValue="ruby">Ruby</g:CheckBox>
+      <g:CheckBox ui:field="pythonCheck" formValue="python">Python</g:CheckBox>
+      <g:CheckBox ui:field="javaCheck" formValue="java">Java</g:CheckBox>
+      <g:CheckBox ui:field="phpCheck" formValue="php">PHP</g:CheckBox>
+      <g:Button ui:field="button">Submit</g:Button>
+    </g:VerticalPanel>
+</ui:UiBinder>
