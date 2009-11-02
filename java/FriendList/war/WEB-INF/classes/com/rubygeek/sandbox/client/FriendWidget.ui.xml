@@ -1,0 +1,19 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+    xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel>
+    	<h3>Friend List</h3>
+    	Add: 
+    	<dl>
+    	 <dt>Name:</dt>
+    	   <dd><g:TextBox ui:field="name"/></dd>
+    	 <dt>Email:</dt>
+    	   <dd><g:TextBox ui:field="email"/></dd>
+    	 <dt>Phone:</dt>
+    	   <dd><g:TextBox ui:field="phone"/></dd>
+    	 </dl>
+    	 <g:Button ui:field="save">Save</g:Button>
+    	 <g:Button ui:field="cancel">Cancel</g:Button> 
+    	    	
+    	<g:FlexTable ui:field="friendList"/>
+    </g:HTMLPanel>
+</ui:UiBinder>
