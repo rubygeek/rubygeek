@@ -1,88 +1,47 @@
 class Address {
-	private String street;
-	private String street2;
-	private String city;
-	private String state;
-	private String zip;
-	private String addressType;
+	private final String street;
+	private final String street2;
+	private final String city;
+	private final String state;
+	private final String zip;
+	private final String addressType;
+
+	public String getStreet() { return this.street; }
+	public String getStreet2() { return this.street2; }
+	public String getCity() { return this.city; }
+	public String getState() { return this.state; }
+	public String getZip() { return this.zip; }
+	public String getAddressType() { return this.addressType; }
 	
-	public void setStreet(String street) {
-		this.street = street;
-	}
-
-	public String getStreet() {
-		return street;
-	}
-
-	public void setStreet2(String street2) {
-		this.street2 = street2;
-	}
-
-	public String getStreet2() {
-		return street2;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public String getState() {
-		return state;
-	}
-
-	public void setZip(String zip) {
-		this.zip = zip;
-	}
-
-	public String getZip() {
-		return zip;
-	}
-
-
-	public void setAddressType(String addressType) {
-		this.addressType = addressType;
-	}
-
-	public String getAddressType() {
-		return addressType;
-	}
-
 	private Address(Builder builder) {
-		setStreet(builder.street);
-		setCity(builder.city);
-		setState(builder.state);
-		setZip(builder.zip);
-		setStreet2(builder.street2);
-		setAddressType(builder.addressType);
+		street = builder.street;
+		city = builder.city;
+		state = builder.state;
+		zip = builder.zip;
+		street2 = builder.street;
+		addressType = builder.addressType;
 	}
 
 	
 	public static class Builder {
 	    // required
-		private String street;
-		private String city;
-		private String state = "ZZ";
-		private String zip = "99999";
-		
+		private final String city;
+		private final String state;
+	
 		//optional
-		private String street2;
+		private String street = null;
+		private String zip = null;
+		private String street2 = null;
 		private String addressType = "HOME"; //change to enum
 
-		public Builder() {}
-		public Builder street(String val) { street = val; return this; }
-		public Builder city(String val) { city = val;  return this;}
-		public Builder state(String val) { state = val;  return this;}
-		public Builder zip(String val) { zip = val;  return this;}
-		public Builder street2(String val) { street2 = val;  return this;}
-		public Builder addressType(String val) { addressType = val;  return this;}
+		public Builder(String city, String state) {
+			this.city = city;
+			this.state = state;
+		}
+		public Builder street(String val) { this. street = val; return this; }
+	    public Builder zip(String val) { this.zip = val;  return this;}
+		public Builder street2(String val) { this.street2 = val;  return this;}
+		public Builder addressType(String val) { this.addressType = val;  return this;}
 		
 		public Address build() {
 			return new Address(this);
