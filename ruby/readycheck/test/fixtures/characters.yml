@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  character_name: MyString
+  character_level: 1
+  character_spec_1_name: MyString
+  character_spec_1_utility: MyString
+  character_spec_2_name: MyString
+  character_spec_2_utility: MyString
+  character_profession_1: MyString
+  character_profession_2: MyString
+
+two:
+  user_id: 1
+  character_name: MyString
+  character_level: 1
+  character_spec_1_name: MyString
+  character_spec_1_utility: MyString
+  character_spec_2_name: MyString
+  character_spec_2_utility: MyString
+  character_profession_1: MyString
+  character_profession_2: MyString

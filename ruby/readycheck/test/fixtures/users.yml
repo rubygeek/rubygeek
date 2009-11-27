@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  access_level: 1
+  gmt_offset: 1
+
+two:
+  name: MyString
+  access_level: 1
+  gmt_offset: 1

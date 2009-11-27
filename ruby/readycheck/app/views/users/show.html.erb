@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+<p>
+  <b>Access level:</b>
+  <%=h @user.access_level %>
+</p>
+
+<p>
+  <b>Gmt offset:</b>
+  <%=h @user.gmt_offset %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
