@@ -4171,3 +4171,59 @@ Rendering template within layouts/application
 Rendering users/index
   [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
 Completed in 27ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 20:09:41) [GET]
+
+ActionController::RoutingError (No route matches "/profiles/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-11-28 20:09:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '536b50261bbd7a853675803ab5542ce3ac186a02f69bf0cae4268172f6341a5ea521fec63f647e1656f8007ac648f0afe9afd369f93f4bea7bdfb82897bc34de') LIMIT 1[0m
+Completed in 142ms (View: 47, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-11-28 20:09:49) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '536b50261bbd7a853675803ab5542ce3ac186a02f69bf0cae4268172f6341a5ea521fec63f647e1656f8007ac648f0afe9afd369f93f4bea7bdfb82897bc34de') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/users/edit.html.erb:
+1: <h1>Editing Profile</h1>
+2: 
+3: <% form_for(@user) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/users/edit.html.erb:3
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-11-28 20:10:39) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '536b50261bbd7a853675803ab5542ce3ac186a02f69bf0cae4268172f6341a5ea521fec63f647e1656f8007ac648f0afe9afd369f93f4bea7bdfb82897bc34de') LIMIT 1[0m
+Completed in 47ms (View: 36, DB: 1) | 200 OK [http://127.0.0.1/users/1]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-11-28 20:10:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '536b50261bbd7a853675803ab5542ce3ac186a02f69bf0cae4268172f6341a5ea521fec63f647e1656f8007ac648f0afe9afd369f93f4bea7bdfb82897bc34de') LIMIT 1[0m
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://127.0.0.1/users]

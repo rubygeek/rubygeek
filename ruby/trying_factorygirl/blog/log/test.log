@@ -433,3 +433,781 @@ Rendering users/index.html.erb
 Rendering users/new.html.erb
 Rendering users/show.html.erb
   [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("user", "updated_at", "password_confirmation", "admin", "password", "email", "created_at") VALUES('value for user', '2009-09-12 02:48:03', 'value for password_confirmation', 'f', 'value for password', 'value for email', '2009-09-12 02:48:03')[0m
+Rendering users/show.html.erb
+Rendering users/new.html.erb
+Rendering users/index.html.erb
+Rendering users/edit.html.erb
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("user", "updated_at", "password_confirmation", "admin", "password", "email", "created_at") VALUES('value for user', '2010-01-15 22:16:27', 'value for password_confirmation', 'f', 'value for password', 'value for email', '2010-01-15 22:16:27')[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:16:27) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users/37]
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:16:27) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:16:27) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:16:27) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:16:27) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:16:27) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:16:27) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:16:27) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:16:27) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:16:27) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:16:27) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:16:27) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-01-15 16:16:27) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37/edit]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-01-15 16:16:27) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-01-15 16:16:27) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-01-15 16:16:27) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+Rendering users/show.html.erb
+Rendering users/new.html.erb
+Rendering users/index.html.erb
+Rendering users/edit.html.erb
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("user", "updated_at", "password_confirmation", "admin", "password", "email", "created_at") VALUES('value for user', '2010-01-15 22:18:51', 'value for password_confirmation', 'f', 'value for password', 'value for email', '2010-01-15 22:18:51')[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:18:51) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users/37]
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:18:51) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:18:51) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:18:51) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:18:51) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:18:51) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:18:51) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:18:51) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:18:51) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:18:51) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:18:51) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:18:51) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-01-15 16:18:51) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37/edit]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-01-15 16:18:51) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-01-15 16:18:51) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-01-15 16:18:51) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:18:51', 'this is title', 'this is text', 1, '2010-01-15', '2010-01-15 22:18:51')[0m
+Rendering users/show.html.erb
+Rendering users/new.html.erb
+Rendering users/index.html.erb
+Rendering users/edit.html.erb
+  [4;36;1mUser Create (0.9ms)[0m   [0;1mINSERT INTO "users" ("user", "updated_at", "password_confirmation", "admin", "password", "email", "created_at") VALUES('value for user', '2010-01-15 22:19:54', 'value for password_confirmation', 'f', 'value for password', 'value for email', '2010-01-15 22:19:54')[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:19:54) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users/37]
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:19:54) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:19:54) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:19:54) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:19:54) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:19:54) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:19:54) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:19:54) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:19:54) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:19:54) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:19:54) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:19:54) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-01-15 16:19:54) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37/edit]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-01-15 16:19:54) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-01-15 16:19:54) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-01-15 16:19:54) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:19:54', 'this is title', 'this is text', 1, '2010-01-15', '2010-01-15 22:19:54')[0m
+  [4;36;1mPost Create (0.0ms)[0m   [0;1mSQLite3::SQLException: PRIMARY KEY must be unique: INSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:19:54', 'this is title', 'this is text', 1, '2010-01-15', '2010-01-15 22:19:54')[0m
+Rendering users/show.html.erb
+Rendering users/new.html.erb
+Rendering users/index.html.erb
+Rendering users/edit.html.erb
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("user", "updated_at", "password_confirmation", "admin", "password", "email", "created_at") VALUES('value for user', '2010-01-15 22:21:08', 'value for password_confirmation', 'f', 'value for password', 'value for email', '2010-01-15 22:21:08')[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:21:08) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users/37]
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:21:08) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:21:08) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:21:08) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:21:08) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:21:08) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:21:08) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:21:08) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:21:08) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:21:08) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:21:08) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:21:08) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-01-15 16:21:08) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37/edit]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-01-15 16:21:08) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-01-15 16:21:08) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-01-15 16:21:08) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:21:08', 'this is title', 'this is text', 1, '2010-01-15', '2010-01-15 22:21:08')[0m
+  [4;36;1mPost Create (0.0ms)[0m   [0;1mSQLite3::SQLException: PRIMARY KEY must be unique: INSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:21:08', 'this is title', 'this is text', 1, '2010-01-15', '2010-01-15 22:21:08')[0m
+Rendering users/show.html.erb
+Rendering users/new.html.erb
+Rendering users/index.html.erb
+Rendering users/edit.html.erb
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("user", "updated_at", "password_confirmation", "admin", "password", "email", "created_at") VALUES('value for user', '2010-01-15 22:27:18', 'value for password_confirmation', 'f', 'value for password', 'value for email', '2010-01-15 22:27:18')[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:27:18) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users/37]
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:27:18) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:18) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:18) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:27:18) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:27:18) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:27:18) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:27:18) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-01-15 16:27:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37/edit]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-01-15 16:27:18) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-01-15 16:27:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-01-15 16:27:18) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:27:18', 'title number 1', 'yada yada yada', 1, '2010-01-14 20:00:00', '2010-01-15 22:27:18')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:27:18', 'title number 2', 'yada yada yada', 2, '2010-01-14 20:00:00', '2010-01-15 22:27:18')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:27:18', 'title number 3', 'yada yada yada', 3, '2010-01-14 20:00:00', '2010-01-15 22:27:18')[0m
+Rendering users/show.html.erb
+Rendering users/new.html.erb
+Rendering users/index.html.erb
+Rendering users/edit.html.erb
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("user", "updated_at", "password_confirmation", "admin", "password", "email", "created_at") VALUES('value for user', '2010-01-15 22:27:57', 'value for password_confirmation', 'f', 'value for password', 'value for email', '2010-01-15 22:27:57')[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:27:57) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users/37]
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:27:57) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:57) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:57) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:57) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:57) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:57) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:27:57) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:27:57) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:27:57) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:27:57) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:27:57) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-01-15 16:27:57) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37/edit]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-01-15 16:27:57) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-01-15 16:27:57) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-01-15 16:27:57) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:27:57', 'title number 1', 'yada yada yada', 1, '2010-01-14 20:00:00', '2010-01-15 22:27:57')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:27:57', 'title number 2', 'yada yada yada', 2, '2010-01-14 20:00:00', '2010-01-15 22:27:57')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:27:57', 'title number 3', 'yada yada yada', 3, '2010-01-14 20:00:00', '2010-01-15 22:27:57')[0m
+Rendering users/show.html.erb
+Rendering users/new.html.erb
+Rendering users/index.html.erb
+Rendering users/edit.html.erb
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("user", "updated_at", "password_confirmation", "admin", "password", "email", "created_at") VALUES('value for user', '2010-01-15 22:38:44', 'value for password_confirmation', 'f', 'value for password', 'value for email', '2010-01-15 22:38:44')[0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:38:44) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users/37]
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-01-15 16:38:44) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:38:44) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:38:44) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:38:44) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:38:44) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:38:44) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-01-15 16:38:44) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:38:44) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:38:44) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:38:44) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-01-15 16:38:44) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-01-15 16:38:44) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37/edit]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-01-15 16:38:44) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-01-15 16:38:44) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-01-15 16:38:44) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users]
+  [4;35;1mPost Create (0.5ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:38:44', 'this is title', 'this is text', 1, '2010-01-15', '2010-01-15 22:38:44')[0m
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:38:44', 'title number 1', 'yada yada yada', 1, '2010-01-14 20:00:00', '2010-01-15 22:38:44')[0m
+  [4;35;1mPost Create (0.1ms)[0m   [0mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:38:44', 'title number 2', 'yada yada yada', 2, '2010-01-14 20:00:00', '2010-01-15 22:38:44')[0m
+  [4;36;1mPost Create (0.1ms)[0m   [0;1mINSERT INTO "posts" ("posted_by", "updated_at", "title", "text", "id", "posted_on", "created_at") VALUES(1, '2010-01-15 22:38:44', 'title number 3', 'yada yada yada', 3, '2010-01-14 20:00:00', '2010-01-15 22:38:44')[0m
