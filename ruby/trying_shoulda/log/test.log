@@ -1,0 +1,6 @@
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("updated_at", "title", "body", "posted_on", "blurb", "created_at") VALUES('2010-01-16 02:26:14', 'TestTitle', 'this is the body', '2010-01-15', NULL, '2010-01-16 02:26:14')[0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("updated_at", "title", "body", "posted_on", "blurb", "created_at") VALUES('2010-01-16 02:26:14', 'TestTitle', 'this is the body', '2010-01-15', NULL, '2010-01-16 02:26:14')[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("updated_at", "title", "body", "posted_on", "blurb", "created_at") VALUES('2010-01-16 02:26:34', 'TestTitle', 'this is the body', '2010-01-15', NULL, '2010-01-16 02:26:34')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" LIMIT 1[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("updated_at", "title", "body", "posted_on", "blurb", "created_at") VALUES('2010-01-16 02:26:34', 'TestTitle', 'this is the body', '2010-01-15', NULL, '2010-01-16 02:26:34')[0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" LIMIT 1[0m
