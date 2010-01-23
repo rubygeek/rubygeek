@@ -4,7 +4,10 @@
     <script type="text/javascript" src="jquery-1.4.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("a").removeClass("test");
+        $("a").click(function(event) {
+          event.preventDefault();
+          $(this).hide("slow");
+          });
       });   
     </script>
     <style type="text/css">
@@ -12,7 +15,7 @@
     </style>
   </head>
   <body>
-    <a class="test" href="http://jquery.com/">jQuery</a>
+    <a href="http://jquery.com/">jQuery</a>
     
   </body>
 </html>
