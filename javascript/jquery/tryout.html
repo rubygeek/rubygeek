@@ -2,15 +2,14 @@
 <html>
   <head>
     <script type="text/javascript" src="jquery-1.4.js"></script>
-
     <script type="text/javascript">
       $(document).ready(function() {
-        $("a").click(function(event){
-          alert("as you can see the link no longer takes you to jquery");
-          event.preventDefault();
-        });
+        $("a").addClass("test");
       });   
     </script>
+    <style type="text/css">
+       a.test { font-weight: bold; }
+    </style>
   </head>
   <body>
     <a href="http://jquery.com/">jQuery</a>
