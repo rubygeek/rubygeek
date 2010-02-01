@@ -7,7 +7,7 @@ module CustomMatchers
 
     def matches?(actual)
       @actual = actual
-      @actually <= @expected
+      @actual <= @expected
     end
 
     def failure_message_for_should
