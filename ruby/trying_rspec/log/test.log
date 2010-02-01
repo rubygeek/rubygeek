@@ -4037,3 +4037,937 @@ Rendering weathers/edit.html.erb
   [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
   [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
   [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.4ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.6ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:12:43', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:12:43')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.3ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.8ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:12:43', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:12:43')[0m
+  [4;36;1mWeather Load (0.3ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.5ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:12:43', 'WA', NULL, '2010-01-25 00:12:43', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:12:43')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.2ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:12:43', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:12:43')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.6ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:13:11', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:13:11')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.3ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:13:11', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:13:11')[0m
+  [4;36;1mWeather Load (0.3ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.4ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:13:11', 'WA', NULL, '2010-01-25 00:13:11', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:13:11')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.1ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:13:11', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:13:11')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:25) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/weathers
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/weathers/37]
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:25) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:25) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:25) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1007
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1008
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:25) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:25) [POST]
+  Parameters: {"weather"=>{}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/weathers?]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:25) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Redirected to http://test.host/weathers/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:25) [POST]
+  Parameters: {"weather"=>{}}
+Redirected to http://test.host/weathers/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?]
+
+
+Processing WeathersController#edit (for 0.0.0.0 at 2010-01-31 18:16:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37/edit]
+
+
+Processing WeathersController#new (for 0.0.0.0 at 2010-01-31 18:16:25) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/new]
+
+
+Processing WeathersController#show (for 0.0.0.0 at 2010-01-31 18:16:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37]
+
+
+Processing WeathersController#index (for 0.0.0.0 at 2010-01-31 18:16:25) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers]
+Rendering weathers/new.html.erb
+Rendering weathers/index.html.erb
+Rendering weathers/show.html.erb
+Rendering weathers/edit.html.erb
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:26', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:26')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.3ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:26', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:26')[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.3ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:26', 'WA', NULL, '2010-01-25 00:16:26', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:26')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:26', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:26')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:31) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/weathers
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/weathers/37]
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:31) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:31) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:31) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:31) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:31) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:31) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1007
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:31) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:31) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:31) [POST]
+  Parameters: {"weather"=>{}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:31) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Redirected to http://test.host/weathers/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:31) [POST]
+  Parameters: {"weather"=>{}}
+Redirected to http://test.host/weathers/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?]
+
+
+Processing WeathersController#edit (for 0.0.0.0 at 2010-01-31 18:16:31) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/weathers/37/edit]
+
+
+Processing WeathersController#new (for 0.0.0.0 at 2010-01-31 18:16:31) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/new]
+
+
+Processing WeathersController#show (for 0.0.0.0 at 2010-01-31 18:16:31) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37]
+
+
+Processing WeathersController#index (for 0.0.0.0 at 2010-01-31 18:16:31) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers]
+Rendering weathers/new.html.erb
+Rendering weathers/index.html.erb
+Rendering weathers/show.html.erb
+Rendering weathers/edit.html.erb
+  [4;36;1mWeather Load (0.3ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.6ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:31', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:31')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.4ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:31', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:31')[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.7ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.3ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:31', 'WA', NULL, '2010-01-25 00:16:31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:31')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:31', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:31')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.4ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:35) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/weathers
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/weathers/37]
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:35) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:35) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:35) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:35) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:35) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:35) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1007
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:35) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:35) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:35) [POST]
+  Parameters: {"weather"=>{}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:35) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Redirected to http://test.host/weathers/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:35) [POST]
+  Parameters: {"weather"=>{}}
+Redirected to http://test.host/weathers/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?]
+
+
+Processing WeathersController#edit (for 0.0.0.0 at 2010-01-31 18:16:35) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37/edit]
+
+
+Processing WeathersController#new (for 0.0.0.0 at 2010-01-31 18:16:35) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/new]
+
+
+Processing WeathersController#show (for 0.0.0.0 at 2010-01-31 18:16:35) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/show
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37]
+
+
+Processing WeathersController#index (for 0.0.0.0 at 2010-01-31 18:16:35) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers]
+Rendering weathers/new.html.erb
+Rendering weathers/index.html.erb
+Rendering weathers/show.html.erb
+Rendering weathers/edit.html.erb
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.5ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:36', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:36')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.3ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:36', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:36')[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.3ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:36', 'WA', NULL, '2010-01-25 00:16:36', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:36')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:36', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:36')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (1.5ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:41) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/weathers
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/weathers/37]
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:41) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:41) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:41) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:41) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:41) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:41) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1007
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:41) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:41) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:41) [POST]
+  Parameters: {"weather"=>{}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:41) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Redirected to http://test.host/weathers/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:41) [POST]
+  Parameters: {"weather"=>{}}
+Redirected to http://test.host/weathers/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?]
+
+
+Processing WeathersController#edit (for 0.0.0.0 at 2010-01-31 18:16:41) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37/edit]
+
+
+Processing WeathersController#new (for 0.0.0.0 at 2010-01-31 18:16:41) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/new]
+
+
+Processing WeathersController#show (for 0.0.0.0 at 2010-01-31 18:16:41) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37]
+
+
+Processing WeathersController#index (for 0.0.0.0 at 2010-01-31 18:16:41) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers]
+Rendering weathers/new.html.erb
+Rendering weathers/index.html.erb
+Rendering weathers/show.html.erb
+Rendering weathers/edit.html.erb
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:41', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:41')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.3ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:41', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:41')[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:41', 'WA', NULL, '2010-01-25 00:16:41', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:41')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:41', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:41')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:51) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/weathers
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/weathers/37]
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:16:51) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:51) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:51) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:51) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:51) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:51) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1007
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:16:51) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:51) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:51) [POST]
+  Parameters: {"weather"=>{}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:51) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Redirected to http://test.host/weathers/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:16:51) [POST]
+  Parameters: {"weather"=>{}}
+Redirected to http://test.host/weathers/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?]
+
+
+Processing WeathersController#edit (for 0.0.0.0 at 2010-01-31 18:16:51) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37/edit]
+
+
+Processing WeathersController#new (for 0.0.0.0 at 2010-01-31 18:16:51) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/new]
+
+
+Processing WeathersController#show (for 0.0.0.0 at 2010-01-31 18:16:51) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37]
+
+
+Processing WeathersController#index (for 0.0.0.0 at 2010-01-31 18:16:51) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers]
+Rendering weathers/new.html.erb
+Rendering weathers/index.html.erb
+Rendering weathers/show.html.erb
+Rendering weathers/edit.html.erb
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.5ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:52', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:52')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.6ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:52', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:52')[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.9ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.5ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:52', 'WA', NULL, '2010-01-25 00:16:52', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:52')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:16:52', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:16:52')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:17:58) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/weathers
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/weathers/37]
+
+
+Processing WeathersController#destroy (for 0.0.0.0 at 2010-01-31 18:17:58) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:17:58) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:17:58) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:17:58) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:17:58) [PUT]
+  Parameters: {"id"=>"37", "weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:17:58) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1007
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#update (for 0.0.0.0 at 2010-01-31 18:17:58) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/weathers/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers/1]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:17:58) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:17:58) [POST]
+  Parameters: {"weather"=>{}}
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers?]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:17:58) [POST]
+  Parameters: {"weather"=>{"these"=>"params"}}
+Redirected to http://test.host/weathers/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?weather%5Bthese%5D=params]
+
+
+Processing WeathersController#create (for 0.0.0.0 at 2010-01-31 18:17:58) [POST]
+  Parameters: {"weather"=>{}}
+Redirected to http://test.host/weathers/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/weathers?]
+
+
+Processing WeathersController#edit (for 0.0.0.0 at 2010-01-31 18:17:58) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37/edit]
+
+
+Processing WeathersController#new (for 0.0.0.0 at 2010-01-31 18:17:58) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/new]
+
+
+Processing WeathersController#show (for 0.0.0.0 at 2010-01-31 18:17:58) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/weathers
+Rendering weathers/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers/37]
+
+
+Processing WeathersController#index (for 0.0.0.0 at 2010-01-31 18:17:58) [GET]
+Rendering template within layouts/weathers
+Rendering weathers/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/weathers]
+Rendering weathers/new.html.erb
+Rendering weathers/index.html.erb
+Rendering weathers/show.html.erb
+Rendering weathers/edit.html.erb
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (88.8ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:17:58', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:17:58')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.3ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:17:59', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:17:59')[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:17:59', 'WA', NULL, '2010-01-25 00:17:59', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:17:59')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:17:59', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:17:59')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.6ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:18:05', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:18:05')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.4ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:18:05', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:18:05')[0m
+  [4;35;1mWeather Load (2.0ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.3ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:18:05', 'WA', NULL, '2010-01-25 00:18:05', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:18:05')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:18:05', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:18:05')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:18:17', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:18:17')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.3ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:18:17', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:18:17')[0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.4ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:18:17', 'WA', NULL, '2010-01-25 00:18:17', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:18:17')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:18:17', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:18:17')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.7ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:37:09', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:37:09')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.4ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.3ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.4ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:37:09', 'WA', NULL, '2010-01-31', 98117, 'F', 63, 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:37:09')[0m
+  [4;35;1mWeather Load (0.9ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Create (0.5ms)[0m   [0mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:37:09', 'WA', NULL, '2010-01-25 00:37:09', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:37:09')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Create (0.1ms)[0m   [0;1mINSERT INTO "weathers" ("city", "updated_at", "region", "temperature_low", "recorded_at", "zipcode", "temperature_units", "temperature_high", "link", "created_at") VALUES('Seattle', '2010-02-01 00:37:09', 'WA', NULL, '2010-01-31', 98117, 'F', '53', 'http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html', '2010-02-01 00:37:09')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "weathers" [0m
+  [4;36;1mWeather Load (0.5ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.2ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.2ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;35;1mWeather Load (0.1ms)[0m   [0mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m
+  [4;36;1mWeather Load (0.1ms)[0m   [0;1mSELECT * FROM "weathers" WHERE ("weathers"."zipcode" = 98117 AND "weathers"."recorded_at" = '2010-01-31') LIMIT 1[0m

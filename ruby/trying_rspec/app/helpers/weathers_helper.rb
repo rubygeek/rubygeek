@@ -1,0 +1,2 @@
+module WeathersHelper
+end

@@ -1,0 +1,270 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<script language="JavaScript" src="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/Articles.js"></script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="AppleSyndicationInfo" alternateURL="http://us.rd.yahoo.com/dailynews/rss/weather/Bradley__IL/*http://weather.yahoo.com/forecast/USIL0130_f.html" />
+        
+    <link id="apple-rss-icon" rel="icon" href="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/favicon.tif" type="image/x-icon" />
+    <script language="JavaScript">updateIconHref("http://us.rd.yahoo.com/dailynews/rss/weather/Bradley__IL/*http://weather.yahoo.com/forecast/USIL0130_f.html");</script>
+    
+    <link rel="stylesheet" href="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/Main.css" title="default" type="text/css" />
+    <link rel="stylesheet" href="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/English.lproj/ArticlesL10N.css" title="default" type="text/css" />
+    
+    <style>
+    
+    </style>
+    
+    
+    <script language="JavaScript">
+        sMinFirstDate = "0";
+        sMaxLastDate = "0";
+        sClickToMarkRead = false;
+    </script>
+
+    <title>Yahoo! Weather - Bradley, IL</title>
+    <base href="http://us.rd.yahoo.com/dailynews/rss/weather/Bradley__IL/*http://weather.yahoo.com/forecast/USIL0130_f.html"/>
+</head>
+
+<body class="apple-rss-no-unread-mode" onLoad="setup(null)">
+
+    <div id="apple-rss-sidebar-background"></div>
+    <div id="apple-rss-banner">
+        <div id="apple-rss-title">
+            <a href="http://us.rd.yahoo.com/dailynews/rss/weather/Bradley__IL/*http://weather.yahoo.com/forecast/USIL0130_f.html">
+            <span id="apple-rss-title-text">Yahoo! Weather - Bradley, IL</span>
+            </a>
+        </div>
+        
+        
+
+        <div id="apple-rss-counts">
+            <span id="apple-rss-unread-count-wrapper"  >
+                <span id="apple-rss-unread-count" text="New">0</span>, 
+            </span>
+            <span id="apple-rss-total-count" text="Total">1</span>
+	    <script language="JavaScript">incrementCounts(1, 0);</script>
+        </div>
+    </div>
+
+    <div id="apple-rss-scroller" onScroll="slipDiffScroll(this)" >
+        <div id="apple-rss-sidebar">
+
+            <div class="apple-rss-group" id="apple-rss-filtergroup">
+                <div class="apple-rss-group-title">Search Articles:</div>
+                <input type="search" id="apple-rss-search-field" results="0" incremental="1" placeholder="" value=""
+                    onKeyDown="handleScrollKeys(event)" 
+                    onSearch="setContentFilter(this.value, 'Add Bookmark&hellip;', 'Bookmark This Search')" /> 
+            </div>
+
+            <div class="apple-rss-group" id="apple-rss-slidergroup">
+                <div class="apple-rss-group-title">Article Length:</div>
+                <div id="apple-rss-slider-div">
+                    <img src="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/Smaller.tif" width="16" height="16" onclick="scaleToMin()" />
+                    <input id="apple-rss-slider" type="range" min="0" value="100" max="100" onmousedown="startScale()" onmouseup="endScale()" oninput="scaleArticles(this.value)" />
+                    <img src="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/Bigger.tif" width="16" height="16" onclick="scaleToMax()" />
+                </div>
+            </div>
+        
+            <div class="apple-rss-group" id="apple-rss-sorts">
+                <div class="apple-rss-group-title">Sort By:</div>
+                
+                    <div class="apple-rss-current" name="0">
+                        <a href="#" onclick="sortArticlesBy(0); return false;">
+                            Date
+                        </a>
+                    </div>
+                
+                    <div  name="1">
+                        <a href="#" onclick="sortArticlesBy(1); return false;">
+                            Title
+                        </a>
+                    </div>
+                
+                    <div  name="2">
+                        <a href="#" onclick="sortArticlesBy(2); return false;">
+                            Source
+                        </a>
+                    </div>
+                
+                    <div  name="3">
+                        <a href="#" onclick="sortArticlesBy(3); return false;">
+                            New
+                        </a>
+                    </div>
+                
+	    	<script language="JavaScript">sSortType = 0;</script>
+            </div>
+        
+            <div class="apple-rss-group" id="apple-rss-timespans">
+                <div class="apple-rss-group-title">Recent Articles:</div>
+                
+                        <div class="apple-rss-current" name="0"
+                                firstDate="0" lastDate="0" 
+                                noarticles="No Articles">
+                            <a href="#" onclick="setDateFilter(0); return false;">
+                                All
+                            </a>
+                        </div>
+                    
+                        <div  name="1"
+                                firstDate="286610400" lastDate="286696800" 
+                                noarticles="No Articles Today">
+                            <a href="#" onclick="setDateFilter(1); return false;">
+                                Today
+                            </a>
+                        </div>
+                    
+                        <div  name="2"
+                                firstDate="286524000" lastDate="286610400" 
+                                noarticles="No Articles Yesterday">
+                            <a href="#" onclick="setDateFilter(2); return false;">
+                                Yesterday
+                            </a>
+                        </div>
+                    
+                        <div  name="3"
+                                firstDate="286092000" lastDate="286696800" 
+                                noarticles="No Articles This Week">
+                            <a href="#" onclick="setDateFilter(3); return false;">
+                                Last Seven Days
+                            </a>
+                        </div>
+                    
+                        <div  name="4"
+                                firstDate="284018400" lastDate="286696800" 
+                                noarticles="No Articles This Month">
+                            <a href="#" onclick="setDateFilter(4); return false;">
+                                This Month
+                            </a>
+                        </div>
+                    
+                        <div  name="5"
+                                firstDate="284018400" lastDate="284018400" 
+                                noarticles="No Articles Last Month">
+                            <a href="#" onclick="setDateFilter(5); return false;">
+                                Last Month
+                            </a>
+                        </div>
+                    
+            </div>
+           
+            <div class="apple-rss-group" id="apple-rss-source-list">
+            
+                    <div class="apple-rss-group-title">Source:</div>
+                    <div class="apple-rss-source-link"><a href="http://us.rd.yahoo.com/dailynews/rss/weather/Bradley__IL/*http://weather.yahoo.com/forecast/USIL0130_f.html"><span id="apple-rss-source-name-text">Yahoo! Weather - Bradley, IL</span></a></div>
+                
+            </div>
+
+            <div class="apple-rss-group">
+                <div class="apple-rss-group-title">Actions:</div>
+
+                
+                <div>
+                    <a href="#" onclick="refreshFeed(); return false;">Update Now</a>
+                </div>
+                <div id="apple-rss-mailto">
+                    <a href="mail-link:">Mail Link to This Page</a>
+                </div>
+                
+                <div id="apple-rss-mail-link">
+                    <a id="apple-rss-mail-href" href="#" onclick="subscribeInMail(); return false;">Subscribe in Mail</a>
+                </div>
+                
+                <div id="apple-rss-itunes-link">
+                    <a id="apple-rss-itunes-href" href="#" onclick="subscribeInTunes(); return false;">Subscribe in iTunes</a>
+                </div>
+                
+                <div id="apple-rss-bookmark-link">
+                
+                    <a id="apple-rss-bookmark-href" href="#" onclick="bookmarkFeed(); return false;" title="Bookmark this RSS page to automatically receive new articles.">Add Bookmark&hellip;</a>
+                </div>
+            </div>
+            
+                <div id="apple-rss-foaf-placeholder"></div>
+                <script language="JavaScript">loadFOAF();</script>
+            
+        </div>
+
+        <div id="apple-rss-no-articles" style="display:none;">No Articles<script language="JavaScript">updateNoArticlesMessage();</script></div>
+            
+        <div id="apple-rss-content-area">
+            <div id="apple-rss-alert-banner" style="display:none">
+                <img id="apple-rss-alert-icon" src="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/AlertIcon.tif" width="32" height="32" />
+                <span id="apple-rss-alert-text"> replaced by showAlertBanner(url, alert) if necessary </span>
+                <div id="apple-rss-alert-form" style="display:none">
+                    <form autocomplete="off" action="feed:///__cmd__/authenticate/" method="POST">
+                        <input id="apple-rss-alert-url" type="hidden" name="URL" value="to be named later" />
+                        <input id="apple-rss-alert-aggregate-url" type="hidden" name="aggregateURL" value="feed://weather.yahooapis.com/forecastrss?p=USIL0130&u=f" />
+                        <span id="apple-rss-alert-username-span">Username: <input name="username" type="text" /></span>
+                        <span id="apple-rss-alert-password-span">Password: <input name="password" type="password" /></span>
+                        <span id="apple-rss-alert-keychain-span">
+                            <input name="addToKeychain" value="1" type="checkbox" />
+                            Add to keychain
+                        </span>
+                        <span id="apple-rss-alert-submit-span"><input type="submit" value="Update"/></span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="apple-rss-content apple-rss-multi-line-mode" id="apple-rss-content" style="appleLineClamp:100%;">
+<!-- TIMING: Template 'feed': 0.026 sec -->
+<!-- start Entries -->
+
+<div class="apple-rss-article apple-rss-read" onclick="handleArticleClick(this)" 
+        articlesortdate="0286657500.000000" articlesorttitle="conditions for bradley, il at 1:05 pm cst" articlesortsource="" sourceindex="0" articlesortid="00000000000000000002" articlelocaldate="0286659613.977448" articleid="0b6eff133a5abe26e655587d204ca63b6f0fa6e4">
+    <div class="apple-rss-article-footer"></div>
+
+    <div class="apple-rss-article-head" >
+        <div class="apple-rss-unread-dot"><img src="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/unread.tif" width="9" height="9" /></div>
+        <div class="apple-rss-subject" title="Conditions for Bradley, IL at 1:05 pm CST"><a href="http://us.rd.yahoo.com/dailynews/rss/weather/Bradley__IL/*http://weather.yahoo.com/forecast/USIL0130_f.html">Conditions for Bradley, IL at 1:05 pm CST</a></div>
+        
+        
+        <div class="apple-rss-summary" >Current Conditions: Fair, 25 F  Forecast: Sun - Mostly Sunny. High: 24 Low: 15 Mon - Few Snow Showers. High: 28 Low: 24  Full Forecast at Yahoo! Weather  (provided by The Weather Channel)</div>
+        <div class="apple-rss-date" title="Today, 1:05 PM">Today, 1:05 PM</div>
+    </div>
+
+    <div class="apple-rss-article-body-container">
+    <div class="apple-rss-article-body">
+    <img src="http://l.yimg.com/a/i/us/we/52/34.gif" /><br />
+<b>Current Conditions:</b><br />
+Fair, 25 F<br />
+<br />
+<b>Forecast:</b><br />
+Sun - Mostly Sunny. High: 24 Low: 15<br />
+Mon - Few Snow Showers. High: 28 Low: 24<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Bradley__IL/*http://weather.yahoo.com/forecast/USIL0130_f.html">Full Forecast at Yahoo! Weather</a><br />
+<br />
+(provided by <a href="http://www.weather.com">The Weather Channel</a>)<br />
+    
+
+
+&nbsp;<a class="apple-rss-article-link" href="http://us.rd.yahoo.com/dailynews/rss/weather/Bradley__IL/*http://weather.yahoo.com/forecast/USIL0130_f.html">Read more&hellip;</a>
+    <!-- end articlebody --></div></div>
+<!-- end article --></div>
+
+<!-- end Entries --><!-- TIMING: Template 'entries': 0.022 sec -->
+
+<!-- end apple-rss-content -->            </div>
+
+            <div id="apple-rss-pagination">
+                <div class="apple-rss-pagination" align="center">
+                    <img id="apple-rss-previous-article" src="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/PreviousPage.tif" width="19" height="18" onclick="goToPage(-4)"/>
+                    <span id="apple-rss-previous-articles"><a href="#" onclick="goToPage(-3); return false;">previous&hellip;</a></span><span id="apple-rss-current-articles"><a href="#" onclick="goToPage(1); return false;">1</a><a href="#" onclick="goToPage(2); return false;">2</a><a href="#" onclick="goToPage(3); return false;">3</a><a href="#" onclick="goToPage(4); return false;">4</a><a href="#" onclick="goToPage(5); return false;">5</a><a href="#" onclick="goToPage(6); return false;">6</a><a href="#" onclick="goToPage(7); return false;">7</a><a href="#" onclick="goToPage(8); return false;">8</a><a href="#" onclick="goToPage(9); return false;">9</a><a href="#" onclick="goToPage(10); return false;">10</a></span><span id="apple-rss-next-articles"><a href="#" onclick="goToPage(-2); return false;">more&hellip;</a></span>
+                    <img id="apple-rss-next-article" src="file://localhost/System/Library/Frameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app/Contents/Resources/NextPage.tif" width="19" height="18" onclick="goToPage(-1)"/>
+                </div>
+            </div>
+
+<!-- end apple-rss-content-area -->        </div>        
+    </div>
+    
+    <script language='JavaScript'>
+        setupPagination(200);
+    </script>
+</body>
+</html>
+<!-- TIMING: Template 'feedcomplete': 0.000 sec -->
+<!-- TIMING: Total RenderTask: 0.300 sec -->

@@ -1,0 +1,52 @@
+<h1>Editing weather</h1>
+
+<% form_for(@weather) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :zipcode %><br />
+    <%= f.text_field :zipcode %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :region %><br />
+    <%= f.text_field :region %>
+  </p>
+  <p>
+    <%= f.label :temperature_high %><br />
+    <%= f.text_field :temperature_high %>
+  </p>
+  <p>
+    <%= f.label :temperature_low %><br />
+    <%= f.text_field :temperature_low %>
+  </p>
+  <p>
+    <%= f.label :temperature_units %><br />
+    <%= f.text_field :temperature_units %>
+  </p>
+  <p>
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </p>
+  <p>
+    <%= f.label :recorded_at %><br />
+    <%= f.date_select :recorded_at %>
+  </p>
+  <p>
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </p>
+  <p>
+    <%= f.label :updated_at %><br />
+    <%= f.datetime_select :updated_at %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @weather %> |
+<%= link_to 'Back', weathers_path %>

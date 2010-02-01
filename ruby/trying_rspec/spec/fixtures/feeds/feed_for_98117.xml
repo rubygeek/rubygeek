@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+ <channel>
+ <title>Yahoo! Weather - Seattle, WA</title>
+ <link>http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html</link>
+ <description>Yahoo! Weather for Seattle, WA</description>
+ <language>en-us</language>
+ <lastBuildDate>Sat, 26 May 2007 7:53 am PDT</lastBuildDate>
+ <ttl>60</ttl>
+ <yweather:location city="Seattle" region="WA" country="US" />
+ <yweather:units temperature="F" distance="mi" pressure="in" speed="mph" />
+ <yweather:wind chill="53" direction="210" speed="7" />
+ <yweather:atmosphere humidity="83" visibility="1609" pressure="30.04" rising="0" />
+  <yweather:astronomy sunrise="5:20 am" sunset="8:53 pm" />
+  <image>
+ <title>Yahoo! Weather</title>
+ <width>142</width>
+ <height>18</height>
+ <link>http://weather.yahoo.com/</link>
+ <url>http://l.yimg.com/us.yimg.com/i/us/nws/th/main_142b.gif</url>
+ </image>
+ <item>
+    <title>Conditions for Seattle, WA at 7:53 am PDT</title>
+    <geo:lat>47.62</geo:lat>
+    <geo:long>-122.32</geo:long>
+    <link>http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html</link>
+    <pubDate>Sat, 26 May 2007 7:53 am PDT</pubDate>
+    <yweather:condition text="Cloudy" code="26" temp="53" date="Sat, 26 May 2007 7:53 am PDT" />
+    <description><![CDATA[
+    <img src="http://l.yimg.com/us.yimg.com/i/us/we/52/26.gif" /><br />
+    <b>Current Conditions:</b><br />
+    Cloudy, 53 F<BR /><BR />
+    <b>Forecast:</b><BR />
+    Sat - Cloudy. High: 72 Low: 53<br />
+    Sun - AM Showers. High: 59 Low: 47<br />
+    <br />
+    <a href="http://us.rd.yahoo.com/dailynews/rss/weather/Seattle__WA/*http://weather.yahoo.com/forecast/98117_f.html">Full Forecast at Yahoo! Weather</a><BR/>
+    (provided by The Weather Channel)<br/>
+    ]]></description>
+    <yweather:forecast day="Sat" date="26 May 2007" low="53" high="72" text="Cloudy" code="26" />
+    <yweather:forecast day="Sun" date="27 May 2007" low="47" high="59" text="AM Showers" code="39" />
+    <guid isPermaLink="false">98117_2007_05_26_7_53_PDT</guid>
+ </item>
+</channel>
+</rss><!-- p5.weather.scd.yahoo.com uncompressed Sat May 26 07:58:03 PDT 2007 -->

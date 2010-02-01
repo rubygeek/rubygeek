@@ -1,0 +1,53 @@
+<p>
+  <b>Zipcode:</b>
+  <%=h @weather.zipcode %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @weather.city %>
+</p>
+
+<p>
+  <b>Region:</b>
+  <%=h @weather.region %>
+</p>
+
+<p>
+  <b>Temperature high:</b>
+  <%=h @weather.temperature_high %>
+</p>
+
+<p>
+  <b>Temperature low:</b>
+  <%=h @weather.temperature_low %>
+</p>
+
+<p>
+  <b>Temperature units:</b>
+  <%=h @weather.temperature_units %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%=h @weather.link %>
+</p>
+
+<p>
+  <b>Recorded at:</b>
+  <%=h @weather.recorded_at %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @weather.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @weather.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_weather_path(@weather) %> |
+<%= link_to 'Back', weathers_path %>
