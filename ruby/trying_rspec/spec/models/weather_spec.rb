@@ -98,9 +98,9 @@ describe Weather, ".fetch_for_zipcode with existing record" do
   it "should not overwrite existing temperature_high if greater" do
     @weather.temperature_high = @weather.temperature_high.to_i + 10
     @weather.save
-    @weather_again = Weather.fetch_for_zipcode(98117)
-    @weather.temperature_high.to_i.should_not
-        be_higher(@weather_again.temperature_high.to_i)
+    lambda {
+      @weather = Weather.fetch_for_zipcode(98117)
+    }.should_not decrease { @weather.temperature_high }
   end 
   
   it "should not overwrite existing temperature_low if lower"

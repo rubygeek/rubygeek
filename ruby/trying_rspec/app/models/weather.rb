@@ -16,8 +16,11 @@ class Weather < ActiveRecord::Base
     weather.region = loc['region']
     
     item = (doc/:item).first
-    weather.temperature_high = (item/"yweather:condition").first["temp"]
-    weather.temperature_high = (item/"yweather:condition").first["temp"]
+    temperature= (item/"yweather:condition").first["temp"]
+    weather.temperature_low = (item/"yweather:condition").first["temp"]
+    if weather.temperature_high.nil? || (temperature.to_i > weather.temperature_high.to_i)
+      weather.temperature_high = temperature
+    end
     
     weather.link = (item/:link).inner_html
     
