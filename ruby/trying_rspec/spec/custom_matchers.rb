@@ -61,11 +61,11 @@ module CustomMatchers
     end
 
     def failure_message_for_should
-      "expected #{@new_value} to be less than #{@original_value}"
+      "expected #{@new_value} to be more than #{@original_value}"
     end
 
     def failure_message_for_should_not
-      "expected #{@new_value} not to be less than #{@original_value}"
+      "expected #{@new_value} not to be more than #{@original_value}"
     end
   end
 
