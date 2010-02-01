@@ -22,6 +22,10 @@ class Weather < ActiveRecord::Base
       weather.temperature_high = temperature
     end
     
+    if weather.temperature_low.nil? || (temperature.to_i < weather.temperature_low.to_i)
+      weather.temperature_low = temperature
+    end
+    
     weather.link = (item/:link).inner_html
     
     weather.recorded_at = Date.today

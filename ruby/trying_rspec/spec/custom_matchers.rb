@@ -48,4 +48,30 @@ module CustomMatchers
     Decrease.new(&measure_proc)
   end
 
+  class Increase
+    def initialize(&measure_proc)
+      @measure_proc = measure_proc
+    end
+
+    def matches?(target)
+      @original_value = @measure_proc.call
+      target.call
+      @new_value = @measure_proc.call
+      return @new_value.to_i > @original_value.to_i
+    end
+
+    def failure_message_for_should
+      "expected #{@new_value} to be less than #{@original_value}"
+    end
+
+    def failure_message_for_should_not
+      "expected #{@new_value} not to be less than #{@original_value}"
+    end
+  end
+
+  def increase(&measure_proc)
+    Increase.new(&measure_proc)
+  end
+
+
 end
