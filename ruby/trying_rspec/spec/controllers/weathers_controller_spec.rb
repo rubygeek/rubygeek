@@ -39,26 +39,33 @@ describe WeathersController do
   end
 
   describe "POST create" do
-
+  
+    before do
+      @weather = mock_model(Weather, :to_param => "1", :save => true)
+      Weather.stub!(:fetch_for_zipcode).and_return(@weather)
+      @params = { :zipcode => '98117'}
+    end
+    
     describe "with valid params" do
+  
       it "assigns a newly created weather as @weather" do
-        Weather.stub!(:new).with({'these' => 'params'}).and_return(mock_weather(:save => true))
-        post :create, :weather => {:these => 'params'}
-        assigns[:weather].should equal(mock_weather)
+        Weather.should_receive(:fetch_for_zipcode).with(@params[:zipcode]).and_return(@weather)
+        post :create, :weather => @params
+        assigns[:weather].should equal(@weather)
       end
 
       it "redirects to the created weather" do
-        Weather.stub!(:new).and_return(mock_weather(:save => true))
-        post :create, :weather => {}
-        response.should redirect_to(weather_url(mock_weather))
+        Weather.should_receive(:fetch_for_zipcode).with(@params[:zipcode]).and_return(@weather)
+        post :create, :weather => @params
+        response.should redirect_to(weather_url(@weather))
       end
     end
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved weather as @weather" do
-        Weather.stub!(:new).with({'these' => 'params'}).and_return(mock_weather(:save => false))
-        post :create, :weather => {:these => 'params'}
-        assigns[:weather].should equal(mock_weather)
+        Weather.should_receive(:fetch_for_zipcode).with({nil}).and_return(@weather)
+        post :create, :weather => {nil}
+        assigns[:weather].should equal(@weather)
       end
 
       it "re-renders the 'new' template" do

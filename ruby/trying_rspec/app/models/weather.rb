@@ -17,7 +17,6 @@ class Weather < ActiveRecord::Base
     
     item = (doc/:item).first
     temperature= (item/"yweather:condition").first["temp"]
-    weather.temperature_low = (item/"yweather:condition").first["temp"]
     if weather.temperature_high.nil? || (temperature.to_i > weather.temperature_high.to_i)
       weather.temperature_high = temperature
     end

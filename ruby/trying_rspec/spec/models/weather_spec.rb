@@ -104,7 +104,7 @@ describe Weather, ".fetch_for_zipcode with existing record" do
   end 
   
   it "should not overwrite existing temperature_low if lower" do
-    @weather.temperature_high = @weather.temperature_low.to_i - 10
+    @weather.temperature_low = @weather.temperature_low.to_i - 10
     @weather.save
     lambda {
       @weather = Weather.fetch_for_zipcode(98117)

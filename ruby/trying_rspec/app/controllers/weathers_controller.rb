@@ -40,7 +40,7 @@ class WeathersController < ApplicationController
   # POST /weathers
   # POST /weathers.xml
   def create
-    @weather = Weather.new(params[:weather])
+    @weather = Weather.fetch_for_zipcode(params[:weather][:zipcode])
 
     respond_to do |format|
       if @weather.save
