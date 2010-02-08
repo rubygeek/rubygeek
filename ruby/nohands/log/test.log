@@ -1,0 +1,452 @@
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:20:24) [GET]
+Rendering posts/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:22:06) [GET]
+Rendering posts/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:22:30) [GET]
+Rendering posts/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:23:09) [GET]
+Rendering posts/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:24:10) [GET]
+Rendering posts/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:24:45) [GET]
+Rendering posts/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 15:36:03) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/show
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:36:03) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 15:36:34) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:36:34) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 15:37:35) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:37:35) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 15:45:00) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:45:00) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 15:53:17) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:53:17) [GET]
+Rendering posts/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 15:55:35) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 15:55:35) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 16:01:39) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:01:39) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 16:02:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:02:35) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 16:03:04) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:03:04) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 16:04:07) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:04:07) [GET]
+Rendering posts/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:05:50) [GET]
+Rendering posts/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:06:52) [GET]
+Rendering posts/new
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:06:52) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:07:02) [GET]
+Rendering posts/new
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:07:02) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:07:34) [GET]
+Rendering posts/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:07:34) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 16:10:45) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/edit
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:10:45) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:10:45) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 16:11:26) [GET]
+  Parameters: {"id"=>"1"}
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:11:26) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:11:26) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 16:13:39) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:13:39) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:13:39) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:15:28) [GET]
+Rendering posts/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:15:28) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 16:16:02) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:16:02) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:16:02) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 16:30:52) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 16:30:52) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 16:30:52) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 17:49:01) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 17:49:01) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 17:49:01) [GET]
+Rendering posts/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 17:57:43) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 17:57:43) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 17:57:43) [GET]
+Rendering posts/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/posts]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 18:15:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 18:15:35) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 1) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 18:15:35) [GET]
+Rendering posts/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 18:15:58) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/edit/1]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 18:15:58) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 18:15:58) [GET]
+Rendering posts/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 18:16:29) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/edit/1]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 18:16:29) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 18:16:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 18:16:29) [GET]
+Rendering posts/index
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 18:16:57) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/edit/1]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 18:16:57) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 18:16:57) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/show/1]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 18:16:57) [GET]
+Rendering posts/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 18:17:32) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/edit/1]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 18:17:32) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 18:17:32) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/show/1]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 18:17:32) [GET]
+Rendering posts/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2010-02-07 18:19:34) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/edit/1]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2010-02-07 18:19:34) [GET]
+Rendering posts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/new]
+
+
+Processing PostsController#show (for 0.0.0.0 at 2010-02-07 18:19:34) [GET]
+  Parameters: {"id"=>"1"}
+Rendering posts/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/posts/show/1]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2010-02-07 18:19:34) [GET]
+Rendering posts/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/posts]
