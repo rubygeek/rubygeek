@@ -1,0 +1,143 @@
+body {
+  background-color: #fbf7f3;
+  margin: 0; }
+  body a:focus {
+    outline: 0; }
+  body #timer {
+    width: 960px;
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #312519; }
+    body #timer a.button {
+      display: block;
+      position: absolute;
+      overflow: hidden;
+      line-height: 10em; }
+      body #timer a.button:hover {
+        cursor: pointer;
+        cursor: hand; }
+    body #timer a#button-25 {
+      width: 72px;
+      height: 72px;
+      top: 15px;
+      left: 20px;
+      background-image: url(../images/button-25.png); }
+      body #timer a#button-25:hover {
+        background-image: url(../images/button-25-hover.png); }
+    body #timer a#button-5-break {
+      width: 42px;
+      height: 42px;
+      top: 30px;
+      left: 100px;
+      background-image: url(../images/button-5-break.png); }
+      body #timer a#button-5-break:hover {
+        background-image: url(../images/button-5-break-hover.png); }
+    body #timer a#button-25-break {
+      width: 53px;
+      height: 53px;
+      top: 25px;
+      left: 150px;
+      background-image: url(../images/button-25-break.png); }
+      body #timer a#button-25-break:hover {
+        background-image: url(../images/button-25-break-hover.png); }
+    body #timer #timer-bar {
+      position: absolute;
+      width: 684px;
+      height: 36px;
+      top: 25px;
+      left: 220px;
+      background-image: url(../images/timer-bar.png);
+      background-color: #fbf7f3; }
+    body #timer #timer-log {
+      position: absolute;
+      width: 684px;
+      height: 15px;
+      top: 71px;
+      left: 220px; }
+      body #timer #timer-log .timer-log-25 {
+        width: 10px;
+        height: 10px;
+        margin: 0 2px 0 0;
+        background-color: #eb363b;
+        float: left; }
+      body #timer #timer-log .timer-log-5-break {
+        width: 6px;
+        height: 6px;
+        margin: 2px 2px 2px 0;
+        background-color: #759f58;
+        float: left; }
+      body #timer #timer-log .timer-log-25-break {
+        width: 12px;
+        height: 6px;
+        margin: 2px 2px 2px 0;
+        background-color: #759f58;
+        float: left; }
+    body #timer #timer-finished {
+      font-family: "Georgia";
+      font-style: italic;
+      font-size: 1.5em;
+      color: #fbf7f3;
+      position: absolute;
+      line-height: 0;
+      top: 45px;
+      left: 220px; }
+  body #tasks {
+    width: 960px;
+    margin: 0 auto; }
+    body #tasks ul {
+      margin: 0;
+      padding: 0; }
+      body #tasks ul li {
+        position: relative;
+        margin: 0 0 1px 0;
+        padding: 0.5em 1em;
+        list-style-type: none;
+        background-color: #eb363b; }
+        body #tasks ul li .handle {
+          width: 16px;
+          height: 16px;
+          margin: 3px 1em auto 0;
+          background-image: url(../images/handle.png);
+          float: left;
+          cursor: move; }
+        body #tasks ul li .textfield {
+          width: 615px;
+          border: none;
+          padding: 3px; }
+        body #tasks ul li .completion {
+          position: absolute;
+          top: 11px;
+          left: 692px;
+          height: 16px;
+          width: 252px; }
+          body #tasks ul li .completion a {
+            display: block;
+            width: 16px;
+            height: 16px;
+            float: left;
+            margin-right: 2px;
+            background-image: url(../images/task-empty.png); }
+            body #tasks ul li .completion a.task-x {
+              background-image: url(../images/task-x.png); }
+            body #tasks ul li .completion a.task-apostrophe {
+              background-image: url(../images/task-apostrophe.png); }
+            body #tasks ul li .completion a.task-dash {
+              background-image: url(../images/task-dash.png); }
+            body #tasks ul li .completion a.task-empty {
+              background-image: url(../images/task-empty.png); }
+  body #task-header, body #task-footer {
+    background-color: #eb363b;
+    width: 960px;
+    height: 32px;
+    margin: 0 auto 1px auto;
+    position: relative; }
+    body #task-header a#add, body #task-footer a#add {
+      display: block;
+      width: 16px;
+      height: 16px;
+      float: right;
+      margin: 7px 16px 0 0;
+      background-image: url(../images/add.png);
+      cursor: pointer;
+      cursor: hand; }
