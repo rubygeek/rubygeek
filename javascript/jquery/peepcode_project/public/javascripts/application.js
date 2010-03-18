@@ -67,7 +67,7 @@ var CountdownTimer = {
             this.cancel();
             this.setBarToTime(0);
             this.showCompletedInLog();
-            this.showCompletedMesage();
+            this.showCompletedMessage();
         } else {
             this.setBarToTime(remainingTime);
         }
