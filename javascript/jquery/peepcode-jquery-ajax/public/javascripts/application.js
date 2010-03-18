@@ -115,49 +115,59 @@ jQuery.fn.extend({
 //     },
 //   });
 
-jQuery(function() {
+var app = {
+    setupTimerButtons:function() {
+        $('#button-25').click(function(e) {
+           e.preventDefault();
+           CountdownTimer.start(25);
+         });
 
+         $('#button-5-break').click(function(e) {
+           e.preventDefault();
+           CountdownTimer.start(5, true);
+         });
+
+         $('#button-25-break').click(function(e) {
+           e.preventDefault();
+           CountdownTimer.start(25, true);
+         });
+    },
+    setupTaskForms:function() {
+        // Make task list sortable
+        $('#tasks ul').sortable({handle:".handle"}).disableSelection();
+
+        // Wire up the add task button
+        $('#add').click(function(e) {
+          e.preventDefault();
+          var taskItem = $('#tasks ul li:first').clone();
+          taskItem.find('form')[0].reset();
+          taskItem.find('.completion a').resetTaskState();
+          $('#tasks ul').append(taskItem);
+          taskItem.find("input[type='text']:first").focus();
+        });
+
+        $('.completion a').live("click", function(e) {
+          e.preventDefault();
+          $(this).toggleTaskState();
+        });
+
+        // Create two extra task fields
+        $('#add').click().click();
+    },
+    loadReport: function() {
+        $("#report").load("/report.html");
+    },
+}
+
+jQuery(function() {
+    app.setupTimerButtons();
+    app.setupTaskForms();
   // Simple Animation
   //  $('#timer-bar').animate({width:1}, 5000).animate({width:600}, 5000);
 
   // Modify CSS
   //   $('#timer-log div').css({opacity:0.3});
 
-  $('#button-25').click(function(e) {
-    e.preventDefault();
-    CountdownTimer.start(25);
-  });
-
-  $('#button-5-break').click(function(e) {
-    e.preventDefault();
-    CountdownTimer.start(5, true);
-  });
-
-  $('#button-25-break').click(function(e) {
-    e.preventDefault();
-    CountdownTimer.start(25, true);
-  });
-
-  // Make task list sortable
-  $('#tasks ul').sortable({handle:".handle"}).disableSelection();
-
-  // Wire up the add task button
-  $('#add').click(function(e) {
-    e.preventDefault();
-    var taskItem = $('#tasks ul li:first').clone();
-    taskItem.find('form')[0].reset();
-    taskItem.find('.completion a').resetTaskState();
-    $('#tasks ul').append(taskItem);
-    taskItem.find("input[type='text']:first").focus();
-  });
-
-  $('.completion a').live("click", function(e) {
-    e.preventDefault();
-    $(this).toggleTaskState();
-  });
-
-  // Create two extra task fields
-  $('#add').click().click();
 
   // Aesthetic bottom div under tasks
   $('#task-footer').bg([0,0,10,10]);
@@ -165,5 +175,6 @@ jQuery(function() {
   // Focus on the first text field
   $("input[type='text']:first").focus();
 
+  app.loadReport();
 });
 
