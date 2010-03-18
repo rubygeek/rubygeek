@@ -1,0 +1,287 @@
+
+!red        = #eb363b
+!red_light  = #e47a80
+!cream      = #fbf7f3
+!brown      = #64584c
+!brown_dark = !brown - #333333
+!green      = #97c751
+!green_dark = #759f58
+!grey       = #c3bfbc
+
+!column_width = 960px
+
+!caption_face = "'Lucida Grande', 'Helvetica Neue', Helvetica, sans-serif"
+!text_face    = "'Helvetica Neue', Corbel, Helvetica, Arial, sans-serif" 
+
+=border-radius(!radius)
+  :-webkit-border-radius = !radius
+  :-moz-border-radius = !radius
+
+body
+  :background-color = !cream
+  :margin 0
+
+a:focus
+  :outline 0
+
+#timer
+  :width = !column_width
+  :height 105px
+  :margin 0 auto
+  :position relative
+  :background-color = !brown_dark
+
+  a
+    &.button
+      :display block
+      :position absolute
+      :overflow hidden
+      :line-height 10em
+
+      &:hover
+        :cursor pointer
+        :cursor hand
+
+    &#button-25
+      :width 72px
+      :height 72px
+      :top 15px
+      :left 20px
+      :background-image url(../images/button-25.png)
+
+      &:hover
+        :background-image url(../images/button-25-hover.png)
+
+    &#button-5-break
+      :width 42px
+      :height 42px
+      :top 30px
+      :left 100px
+      :background-image url(../images/button-5-break.png)
+
+      &:hover
+        :background-image url(../images/button-5-break-hover.png)
+
+    &#button-25-break
+      :width 53px
+      :height 53px
+      :top 25px
+      :left 150px
+      :background-image url(../images/button-25-break.png)
+
+      &:hover
+        :background-image url(../images/button-25-break-hover.png)
+
+  #timer-bar
+    :position absolute
+    :width 684px
+    :height 36px
+    :top 25px
+    :left 220px
+    :background-image url(../images/timer-bar.png)
+    :background-color = !cream
+
+  #timer-log
+    :position absolute
+    :width 684px
+    :height 15px
+    :top 71px
+    :left 220px
+
+    .timer-log-25
+      :width 10px
+      :height 10px
+      :margin 0 2px 0 0
+      :background-color = !red
+      :float left
+
+    .timer-log-5-break
+      :width 6px
+      :height 6px
+      :margin 2px 2px 2px 0
+      :background-color = !green_dark
+      :float left
+
+    .timer-log-25-break
+      :width 12px
+      :height 6px
+      :margin 2px 2px 2px 0
+      :background-color = !green_dark
+      :float left
+
+  #timer-finished
+    :font-family "Georgia"
+    :font-style italic
+    :font-size 1.5em
+    :color = !cream
+    :position absolute
+    :line-height 0
+    :top 45px
+    :left 220px
+
+#tasks
+  width = !column_width
+  margin: 0 auto
+
+  ul
+    :margin 0
+    :padding 0
+
+    li
+      :position relative
+      :margin 0 0 1px 0
+      :padding 0.5em 1em
+      :list-style-type none
+      :background-color = !red
+
+      .handle
+        :width 16px
+        :height 16px
+        :margin 3px 1em auto 0
+        :background-image url(../images/handle.png)
+        :float left
+        :cursor move
+
+      .textfield
+        :width 55em
+        :border none
+        :padding 3px
+
+      .completion
+        !completion_width = (16px + 2px) * 14
+        :position absolute
+        :top 11px
+        :left = !column_width - !completion_width - 16px
+        :height 16px
+        :width = !completion_width
+
+        a
+          :display block
+          :width 16px
+          :height 16px
+          :float left
+          :margin-right 2px
+          :background-image url(../images/task-empty.png)
+
+          &.task-x
+            :background-image url(../images/task-x.png)
+          &.task-apostrophe
+            :background-image url(../images/task-apostrophe.png)
+          &.task-dash
+            :background-image url(../images/task-dash.png)
+          &.task-empty
+            :background-image url(../images/task-empty.png)
+
+#task-header, #task-footer
+  :background-color = !red
+  :width = !column_width
+  :height 32px
+  :margin 0 auto 1px auto
+  :position relative
+
+  a#add
+    :display block
+    :width 16px
+    :height 16px
+    :float right
+    :margin 7px 16px 0 0
+    :background-image url(../images/add.png)
+    :cursor pointer
+    :cursor hand
+
+#report
+  :width = !column_width
+  :margin 1em auto
+  :font-family "Georgia"
+  :text-align center
+
+#ajax-status
+  :position absolute
+  :top 0
+  :right 0
+  :background-color #ddd
+  +border-radius(5px)
+  :padding 5px 10px
+  :margin 4px
+  :font-family = !caption_face
+  :display none
+
+form#login
+  :position absolute
+  :top 0
+  :background-color #323232
+  :text-align center
+  :padding 1em 2em
+  :display none
+  :border
+    :bottom 2px solid #444
+    :left 2px solid #444
+    :right 2px solid #444
+
+  label
+    :font-family = !caption_face
+    :color white
+
+    &[for="password"]
+      :margin-left 1em
+
+    input[type="text"], input[type="password"]
+
+h2
+  :text-align left
+  :font-family "Helvetica Neue", "Helvetica", "Arial", serif
+  :text-transform uppercase
+  :font-size 1.3em
+  :float left
+
+.task-stats 
+  :float right
+  :margin-top 1.5em
+
+.task-stat
+  :float left
+  :font-family "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  :font-weight bold
+
+  label
+    :text-transform uppercase
+    :display inline
+    :color #999
+
+  .quantity
+    :display inline
+    :font-size 3em
+    :font-family Georgia, serif
+    :margin-top 0
+    :padding
+      :top 0
+      :right 1em
+      :left 0.1em
+    :line-height 0
+
+#tweets
+  width = !column_width/2
+  margin: 100px auto
+  clear: all
+
+  .tweet
+    margin-bottom: 2em
+
+    img
+      float: left
+
+    .from_user, .text
+      margin-left: 65px
+      font-family = !caption_face
+
+    .from_user
+      font-size: 0.7em
+      color = !brown
+      margin:
+        top: 0
+        bottom: 0.5em
+
+    .text
+      font-size: 0.8em
+
+
