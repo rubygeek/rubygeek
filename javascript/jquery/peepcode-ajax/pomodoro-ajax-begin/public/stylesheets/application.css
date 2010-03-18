@@ -1,0 +1,229 @@
+body {
+  background-color: #fbf7f3;
+  margin: 0; }
+
+a:focus {
+  outline: 0; }
+
+#timer {
+  width: 960px;
+  height: 105px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #312519; }
+  #timer a.button {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    line-height: 10em; }
+    #timer a.button:hover {
+      cursor: pointer;
+      cursor: hand; }
+  #timer a#button-25 {
+    width: 72px;
+    height: 72px;
+    top: 15px;
+    left: 20px;
+    background-image: url(../images/button-25.png); }
+    #timer a#button-25:hover {
+      background-image: url(../images/button-25-hover.png); }
+  #timer a#button-5-break {
+    width: 42px;
+    height: 42px;
+    top: 30px;
+    left: 100px;
+    background-image: url(../images/button-5-break.png); }
+    #timer a#button-5-break:hover {
+      background-image: url(../images/button-5-break-hover.png); }
+  #timer a#button-25-break {
+    width: 53px;
+    height: 53px;
+    top: 25px;
+    left: 150px;
+    background-image: url(../images/button-25-break.png); }
+    #timer a#button-25-break:hover {
+      background-image: url(../images/button-25-break-hover.png); }
+  #timer #timer-bar {
+    position: absolute;
+    width: 684px;
+    height: 36px;
+    top: 25px;
+    left: 220px;
+    background-image: url(../images/timer-bar.png);
+    background-color: #fbf7f3; }
+  #timer #timer-log {
+    position: absolute;
+    width: 684px;
+    height: 15px;
+    top: 71px;
+    left: 220px; }
+    #timer #timer-log .timer-log-25 {
+      width: 10px;
+      height: 10px;
+      margin: 0 2px 0 0;
+      background-color: #eb363b;
+      float: left; }
+    #timer #timer-log .timer-log-5-break {
+      width: 6px;
+      height: 6px;
+      margin: 2px 2px 2px 0;
+      background-color: #759f58;
+      float: left; }
+    #timer #timer-log .timer-log-25-break {
+      width: 12px;
+      height: 6px;
+      margin: 2px 2px 2px 0;
+      background-color: #759f58;
+      float: left; }
+  #timer #timer-finished {
+    font-family: "Georgia";
+    font-style: italic;
+    font-size: 1.5em;
+    color: #fbf7f3;
+    position: absolute;
+    line-height: 0;
+    top: 45px;
+    left: 220px; }
+
+#tasks {
+  width: 960px;
+  margin: 0 auto; }
+  #tasks ul {
+    margin: 0;
+    padding: 0; }
+    #tasks ul li {
+      position: relative;
+      margin: 0 0 1px 0;
+      padding: 0.5em 1em;
+      list-style-type: none;
+      background-color: #eb363b; }
+      #tasks ul li .handle {
+        width: 16px;
+        height: 16px;
+        margin: 3px 1em auto 0;
+        background-image: url(../images/handle.png);
+        float: left;
+        cursor: move; }
+      #tasks ul li .textfield {
+        width: 55em;
+        border: none;
+        padding: 3px; }
+      #tasks ul li .completion {
+        position: absolute;
+        top: 11px;
+        left: 692px;
+        height: 16px;
+        width: 252px; }
+        #tasks ul li .completion a {
+          display: block;
+          width: 16px;
+          height: 16px;
+          float: left;
+          margin-right: 2px;
+          background-image: url(../images/task-empty.png); }
+          #tasks ul li .completion a.task-x {
+            background-image: url(../images/task-x.png); }
+          #tasks ul li .completion a.task-apostrophe {
+            background-image: url(../images/task-apostrophe.png); }
+          #tasks ul li .completion a.task-dash {
+            background-image: url(../images/task-dash.png); }
+          #tasks ul li .completion a.task-empty {
+            background-image: url(../images/task-empty.png); }
+
+#task-header, #task-footer {
+  background-color: #eb363b;
+  width: 960px;
+  height: 32px;
+  margin: 0 auto 1px auto;
+  position: relative; }
+  #task-header a#add, #task-footer a#add {
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin: 7px 16px 0 0;
+    background-image: url(../images/add.png);
+    cursor: pointer;
+    cursor: hand; }
+
+#report {
+  width: 960px;
+  margin: 1em auto;
+  font-family: "Georgia";
+  text-align: center; }
+
+#ajax-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 5px 10px;
+  margin: 4px;
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, sans-serif;
+  display: none; }
+
+form#login {
+  position: absolute;
+  top: 0;
+  background-color: #323232;
+  text-align: center;
+  padding: 1em 2em;
+  display: none;
+  border-bottom: 2px solid #444;
+  border-left: 2px solid #444;
+  border-right: 2px solid #444; }
+  form#login label {
+    font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, sans-serif;
+    color: white; }
+    form#login label[for="password"] {
+      margin-left: 1em; }
+
+h2 {
+  text-align: left;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  float: left; }
+
+.task-stats {
+  float: right;
+  margin-top: 1.5em; }
+
+.task-stat {
+  float: left;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: bold; }
+  .task-stat label {
+    text-transform: uppercase;
+    display: inline;
+    color: #999; }
+  .task-stat .quantity {
+    display: inline;
+    font-size: 3em;
+    font-family: Georgia, serif;
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 1em;
+    padding-left: 0.1em;
+    line-height: 0; }
+
+#tweets {
+  width: 480px;
+  margin: 100px auto;
+  clear: all; }
+  #tweets .tweet {
+    margin-bottom: 2em; }
+    #tweets .tweet img {
+      float: left; }
+    #tweets .tweet .from_user, #tweets .tweet .text {
+      margin-left: 65px;
+      font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, sans-serif; }
+    #tweets .tweet .from_user {
+      font-size: 0.7em;
+      color: #64584c;
+      margin-top: 0;
+      margin-bottom: 0.5em; }
+    #tweets .tweet .text {
+      font-size: 0.8em; }
