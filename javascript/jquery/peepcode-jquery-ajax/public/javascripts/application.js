@@ -157,9 +157,18 @@ var app = {
     loadReport: function() {
         $("#report").load("/report.html");
     },
+    setupAjaxCallbacks: function(){
+        $('body').ajaxStart(function() {
+            $('#ajax-status').show().text("Loading...");
+        });
+        $('body').ajaxStop(function() {
+            $('#ajax-status').fadeOut();
+        });
+    },
 }
 
 jQuery(function() {
+    app.setupAjaxCallbacks();
     app.setupTimerButtons();
     app.setupTaskForms();
   // Simple Animation
