@@ -14,10 +14,7 @@ var CountdownTimer = {
     if (this.maxWidth == 0)
       this.maxWidth = $('#timer-bar').width();
 
-    if (this.timerId)
-      this.cancel();
-
-    this.minutes = minutes;
+    if (this.timerId) 
     this.isBreak = isBreak;
 
     this.setupTimer();
@@ -202,6 +199,30 @@ var app = {
             left: $(window).width()/2 - $("#login").width()/2
         })
     },
+    getTweets: function(){
+      $.get("http://search.twitter.com/search.json?q=pomodoro",
+            app.showTweets,  //success callback function
+            'jsonp');
+      
+    },
+    showTweets: function(data, textStatus, xhr){
+      // Create a div for the tweets if its not there
+      if($("body").is(":not(:has(#tweets))")) {
+        $("<div/>", { id: "tweets"}).appendTo("body");
+      }
+      // for each tweet, build a div with the info
+      $(data.results).each(function() {
+        $("<div/>", {"class" : "tweet"}).append($('<img/>', {
+            'src' : this.profile_image_url
+          })).append($('<div/>', { 
+            'class' : 'from_user',
+            'text' : this.from_user
+          })).append($('<div/>', {
+            'class' : 'text',
+            'html' : this.text
+          })).appendTo("#tweets");
+      });
+    },
 }
 
 jQuery(function() {
@@ -217,5 +238,6 @@ jQuery(function() {
 
   app.loadReport();
   app.showLoginForm();
+  app.getTweets();    
 });
 
