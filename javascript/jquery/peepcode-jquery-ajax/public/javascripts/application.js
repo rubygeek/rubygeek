@@ -165,12 +165,33 @@ var app = {
             $('#ajax-status').fadeOut();
         });
         $('body').ajaxError(function(event, xhr, ajaxOptions, thrownError) {
+            if (xhr.status === 401) {
+                #TODO: idea, shake the login form instead!
+                if ($('#login').is(":hidden")) {
+                    app.showLoginForm();
+                }
+                alert("Sorry, " + xhr.responseText.toLowerCase());
+            }
             console.log("XHR Response: " + JSON.stringify(xhr));
         });
     },
     showLoginForm: function(){
+        $(window).resize(app.centerLoginForm)
+        app.centerLoginForm();
         var $form = $("form#login");
         $form.show("slide", {direction:"up"});
+        $form.submit(function(e) {
+            e.preventDefault();
+            $.post($form.attr('action'), $form.serialize(), function() {
+                $form.hide("slide", {direction:"up"});
+            })
+        })
+    },
+    centerLoginForm: function(){
+        $("#login").css({
+            left: $(window).width()/2 - $("#login").width()/2
+        })
+        
     },
 }
 
