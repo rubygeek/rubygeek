@@ -22,8 +22,22 @@ var CountdownTimer = {
 
     this.setupTimer();
     this.flashBar();
+    this.notifyServer();
   },
-
+  
+  notifyServer: function(){
+    $.ajax({
+      type: "POST",                         // could also be GET
+      url: "timers.json",                   // url to post to
+      data: JSON.stringify(CountdownTimer),  // serialize data, we could choose a few of the values but the object is not that big, so no big deal
+      contentType: "application/json",      // type we are sending
+      dataType: "json",                      // type of data we want back
+      success: function(data, textStatus, xhr) {
+        console.log("Timer request result: " + textStatus)
+      },
+    })
+  },
+  
   setupTimer:function() {
     $('#timer-finished').fadeOut();
 
@@ -109,12 +123,6 @@ jQuery.fn.extend({
   },
 });
 
-//   jQuery.extend(jQuery.expr[':'], {
-//     task: function(a) {
-//       a.type = "li"
-//     },
-//   });
-
 var app = {
     setupTimerButtons:function() {
         $('#button-25').click(function(e) {
@@ -166,11 +174,13 @@ var app = {
         });
         $('body').ajaxError(function(event, xhr, ajaxOptions, thrownError) {
             if (xhr.status === 401) {
-                #TODO: idea, shake the login form instead!
+                //TODO: idea, shake the login form instead!
                 if ($('#login').is(":hidden")) {
                     app.showLoginForm();
                 }
                 alert("Sorry, " + xhr.responseText.toLowerCase());
+                // important to do this AFTER the alert, because alert will take the focus
+                $("#login input[type='text']:first").focus();
             }
             console.log("XHR Response: " + JSON.stringify(xhr));
         });
@@ -191,20 +201,13 @@ var app = {
         $("#login").css({
             left: $(window).width()/2 - $("#login").width()/2
         })
-        
     },
 }
 
 jQuery(function() {
-    app.setupAjaxCallbacks();
-    app.setupTimerButtons();
-    app.setupTaskForms();
-  // Simple Animation
-  //  $('#timer-bar').animate({width:1}, 5000).animate({width:600}, 5000);
-
-  // Modify CSS
-  //   $('#timer-log div').css({opacity:0.3});
-
+  app.setupAjaxCallbacks();
+  app.setupTimerButtons();
+  app.setupTaskForms();
 
   // Aesthetic bottom div under tasks
   $('#task-footer').bg([0,0,10,10]);
