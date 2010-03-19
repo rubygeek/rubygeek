@@ -168,6 +168,10 @@ var app = {
             console.log("XHR Response: " + JSON.stringify(xhr));
         });
     },
+    showLoginForm: function(){
+        var $form = $("form#login");
+        $form.show("slide", {direction:"up"});
+    },
 }
 
 jQuery(function() {
@@ -188,5 +192,6 @@ jQuery(function() {
   $("input[type='text']:first").focus();
 
   app.loadReport();
+  app.showLoginForm();
 });
 
