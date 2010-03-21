@@ -24,7 +24,8 @@ Todos.main = function main() {
 
   // TODO: Set the content property on your primary controller
   // ex: Todos.contactsController.set('content',Todos.contacts);
-
-} ;
+  var tasks = Todos.store.find(Todos.Task);
+  Todos.tasksController.set('content', tasks);
+};
 
 function main() { Todos.main(); }
