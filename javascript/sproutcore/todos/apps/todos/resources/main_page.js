@@ -27,7 +27,9 @@ Todos.mainPage = SC.Page.design({
      
      addButton: SC.ButtonView.design({
        layout: { centerY: 0, height: 24, left: 8, width: 200},
-       title: "Add Task"
+       title: "Add Task",
+       target: "Todos.tasksController",
+       action: "addTask"
      })
      
    }),
@@ -44,7 +46,9 @@ Todos.mainPage = SC.Page.design({
        contentCheckboxKey: 'isDone',
        rowHeight: 21,
        canEditContent: YES,
-       canDeleteContent: YES
+       canDeleteContent: YES,
+       target: "Todos.tasksController",
+       action: "toggleDone"
      })
    }),
    
