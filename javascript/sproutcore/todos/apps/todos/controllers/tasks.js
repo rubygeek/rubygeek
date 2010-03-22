@@ -36,7 +36,33 @@ Todos.tasksController = SC.ArrayController.create(
     
     var selIndex = indexes.get('min') - 1;
     if (selIndex < 0)  selIndex = 0;
-    this.selectObject(thisobjectAt(selIndex));
+    this.selectObject(this.objectAt(selIndex));
+  },
+  
+  addTask: function() {
+    var task;
+    task = Todos.store.createRecord(Todos.Task, {
+      "description" : "",
+      "isDone" : false
+    });
+    
+    // select new task in UI
+    this.selectObject(task);
+    
+    // activate inline editor once UI can repaint
+    this.invokeLater(function() {
+      var contentIndex = this.indexOf(task);
+      var list = Todos.mainPage.getPath('mainPane.middleView.contentView');
+      var listItem = list.itemViewForContentIndex(contentIndex);
+      listItem.beginEditing();
+    });
+    return YES;
+  },
+  
+  toggleDone: function() {
+    var sel = this.get('selection');
+    sel.setEach('isDone', !sel.everyProperty('isDone'));
+    return YES;
   }
 
 }) ;
