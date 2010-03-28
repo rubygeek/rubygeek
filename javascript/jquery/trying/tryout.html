@@ -1,22 +1,19 @@
 <!doctype html>
 <html>
   <head>
-    <script type="text/javascript" src="jquery-1.4.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"/>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("a").click(function(event) {
-          event.preventDefault();
-          $(this).hide("slow");
-          });
-      });   
+        //do stuff when DOM is ready
+        $('a').click(function() {
+          alert("Hello World!");
+        });
+      });
+
     </script>
-    <style type="text/css">
-       a.test { font-weight: bold; }
-    </style>
   </head>
   <body>
-    <a href="http://jquery.com/">jQuery</a>
-    
+    <a href="">Link</a>
   </body>
 </html>
 
