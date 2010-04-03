@@ -1,0 +1,45 @@
+--- 
+/Users/nolastowe/develop/rubygeek/rubygeek/javascript/sproutcore/todos/apps/todos/data_sources/task.js: 
+  scan_source: 
+    mtime: 1269351559
+    value: 
+    - - sc_require
+      - "\""
+      - models/task
+/Users/nolastowe/develop/rubygeek/rubygeek/javascript/sproutcore/todos/apps/todos/controllers/tasks.js: 
+  scan_source: 
+    mtime: 1269218328
+    value: []
+
+/Users/nolastowe/develop/rubygeek/rubygeek/javascript/sproutcore/todos/apps/todos/fixtures/task.js: 
+  scan_source: 
+    mtime: 1269218328
+    value: 
+    - - sc_require
+      - "'"
+      - models/task
+/Users/nolastowe/develop/rubygeek/rubygeek/javascript/sproutcore/todos/apps/todos/core.js: 
+  scan_source: 
+    mtime: 1269265320
+    value: []
+
+/Users/nolastowe/develop/rubygeek/rubygeek/javascript/sproutcore/todos/apps/todos/main.js: 
+  scan_source: 
+    mtime: 1269230459
+    value: []
+
+/Users/nolastowe/develop/rubygeek/rubygeek/javascript/sproutcore/todos/apps/todos/resources/main_page.js: 
+  scan_source: 
+    mtime: 1269218328
+    value: []
+
+/Users/nolastowe/develop/rubygeek/rubygeek/javascript/sproutcore/todos/apps/todos/models/task.js: 
+  scan_source: 
+    mtime: 1269218328
+    value: []
+
+/Users/nolastowe/develop/rubygeek/rubygeek/javascript/sproutcore/todos/apps/todos/resources/loading.rhtml: 
+  scan_source: 
+    mtime: 1269218328
+    value: []
+
