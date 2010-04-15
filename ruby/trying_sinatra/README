@@ -1,5 +1,10 @@
 This is an app to practice sinatra.
 
+Next:
+* make sure data is saved
+* index shows list of photos
+* jquery widget to load via ajax
+* json interface to get list of photos
 
 Notes:
 * try out http://github.com/padrino/padrino-framework
