@@ -1,0 +1,13 @@
+<p>
+  <b>Title:</b>
+  <%=h @articles.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @articles.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_articles_path(@articles) %> |
+<%= link_to 'Back', articles_path %>
