@@ -1,20 +1,14 @@
-<h1>Editing articles</h1>
+<h1>Editing article</h1>
 
-<% form_for(@articles) do |f| %>
+<% form_for(@article) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </p>
+  <%= render :partial => 'form', :locals => {:f => f} %>
+
   <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @articles %> |
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Show', @article %> |
+<%= link_to 'Back', article_path %>

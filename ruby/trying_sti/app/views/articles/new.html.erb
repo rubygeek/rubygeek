@@ -1,16 +1,7 @@
-<h1>New articles</h1>
+<h1>New article</h1>
 
-<% form_for(@articles) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </p>
+<% form_for(@article) do |f| %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
   <p>
     <%= f.submit 'Create' %>
   </p>

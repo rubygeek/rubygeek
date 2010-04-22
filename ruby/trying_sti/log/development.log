@@ -1,0 +1,570 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (26.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100422135011)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100422135011')[0m
+Migrating to CreateAttachments (20100422135403)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "attachments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "article_id" integer, "description" varchar(255), "filename" varchar(255), "filesize" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100422135403')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mPRAGMA index_list("articles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("attachments")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 09:47:31) [GET]
+
+LoadError (Expected /Users/nolastowe/develop/rubygeek/rubygeek/ruby/trying_sti/app/models/article.rb to define Article):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:51:35) [GET]
+
+ActionController::RoutingError (No route matches "/article" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 09:52:01) [GET]
+
+LoadError (Expected /Users/nolastowe/develop/rubygeek/rubygeek/ruby/trying_sti/app/models/article.rb to define Article):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 09:58:14) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 243ms (View: 237, DB: 0) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-04-22 09:58:16) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+
+ActionView::TemplateError (article_url failed to generate from {:controller=>"articles", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["articles", :id] - are they all satisfied?) on line #19 of app/views/articles/new.html.erb:
+16:   </p>
+17: <% end %>
+18: 
+19: <%= link_to 'Back', article_path %>
+
+    (eval):16:in `article_path'
+    app/views/articles/new.html.erb:19
+    app/controllers/articles_controller.rb:29:in `new'
+
+Rendered rescues/_trace (50.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-04-22 09:59:00) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-04-22 09:59:07) [POST]
+  Parameters: {"article"=>{"body"=>"sfs", "title"=>"this "}, "commit"=>"Create", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY="}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.save):
+  app/controllers/articles_controller.rb:46:in `create'
+  app/controllers/articles_controller.rb:45:in `create'
+
+Rendered rescues/_trace (112.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-04-22 09:59:33) [POST]
+  Parameters: {"article"=>{"body"=>"sfs", "title"=>"this "}, "commit"=>"Create", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY="}
+  [4;35;1mArticle Create (21.6ms)[0m   [0mINSERT INTO "articles" ("updated_at", "title", "body", "created_at") VALUES('2010-04-22 14:59:33', 'this ', 'sfs', '2010-04-22 14:59:33')[0m
+Redirected to http://127.0.0.1:3000/articles/1
+Completed in 35ms (DB: 22) | 302 Found [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-04-22 09:59:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+
+ActionView::TemplateError (undefined method `edit_articles_path' for #<ActionView::Base:0x25b4288>) on line #12 of app/views/articles/show.html.erb:
+9: </p>
+10: 
+11: 
+12: <%= link_to 'Edit', edit_articles_path(@article) %> |
+13: <%= link_to 'Back', article_path %>
+
+    app/views/articles/show.html.erb:12
+    app/controllers/articles_controller.rb:18:in `show'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-04-22 10:00:00) [POST]
+  Parameters: {"article"=>{"body"=>"sfs", "title"=>"this "}, "commit"=>"Create", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY="}
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("updated_at", "title", "body", "created_at") VALUES('2010-04-22 15:00:00', 'this ', 'sfs', '2010-04-22 15:00:00')[0m
+Redirected to http://127.0.0.1:3000/articles/2
+Completed in 13ms (DB: 0) | 302 Found [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-04-22 10:00:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 10:00:03) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `edit_articles_path' for #<ActionView::Base:0x2318d08>) on line #14 of app/views/articles/index.html.erb:
+11:     <td><%=h article.title %></td>
+12:     <td><%=h article.body %></td>
+13:     <td><%= link_to 'Show', article %></td>
+14:     <td><%= link_to 'Edit', edit_articles_path(article) %></td>
+15:     <td><%= link_to 'Destroy', articles, :confirm => 'Are you sure?', :method => :delete %></td>
+16:   </tr>
+17: <% end %>
+
+    app/views/articles/index.html.erb:14
+    app/views/articles/index.html.erb:9:in `each'
+    app/views/articles/index.html.erb:9
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 10:00:26) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+
+ActionView::TemplateError (undefined local variable or method `articles' for #<ActionView::Base:0x2486cbc>) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.body %></td>
+13:     <td><%= link_to 'Show', article %></td>
+14:     <td><%= link_to 'Edit', edit_article_path(article) %></td>
+15:     <td><%= link_to 'Destroy', articles, :confirm => 'Are you sure?', :method => :delete %></td>
+16:   </tr>
+17: <% end %>
+18: </table>
+
+    app/views/articles/index.html.erb:15
+    app/views/articles/index.html.erb:9:in `each'
+    app/views/articles/index.html.erb:9
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 10:00:41) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2010-04-22 10:00:45) [DELETE]
+  Parameters: {"authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY=", "id"=>"2"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+  [4;35;1mArticle Destroy (0.3ms)[0m   [0mDELETE FROM "articles" WHERE "id" = 2[0m
+Redirected to http://127.0.0.1:3000/articles/2
+Completed in 14ms (DB: 1) | 302 Found [http://127.0.0.1/articles/2]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-04-22 10:00:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=2):
+  app/controllers/articles_controller.rb:16:in `show'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-04-22 10:01:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=2):
+  app/controllers/articles_controller.rb:16:in `show'
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-04-22 10:01:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=2):
+  app/controllers/articles_controller.rb:16:in `show'
+
+Rendered rescues/_trace (111.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 10:01:27) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-04-22 10:01:30) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-04-22 10:01:34) [POST]
+  Parameters: {"article"=>{"body"=>"lkjl", "title"=>"sdflkj"}, "commit"=>"Create", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY="}
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("updated_at", "title", "body", "created_at") VALUES('2010-04-22 15:01:34', 'sdflkj', 'lkjl', '2010-04-22 15:01:34')[0m
+Redirected to http://127.0.0.1:3000/articles/3
+Completed in 13ms (DB: 0) | 302 Found [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-04-22 10:01:34) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 10:01:36) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2010-04-22 10:01:40) [DELETE]
+  Parameters: {"authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY=", "id"=>"3"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+  [4;36;1mArticle Destroy (1.5ms)[0m   [0;1mDELETE FROM "articles" WHERE "id" = 3[0m
+Redirected to http://127.0.0.1:3000/articles
+Completed in 14ms (DB: 2) | 302 Found [http://127.0.0.1/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 10:01:40) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 10:02:19) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-04-22 10:15:15) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-04-22 10:15:20) [POST]
+  Parameters: {"article"=>{"body"=>"hkjh", "title"=>"sdf"}, "commit"=>"Create", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY="}
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("updated_at", "title", "body", "created_at") VALUES('2010-04-22 15:15:20', 'sdf', 'hkjh', '2010-04-22 15:15:20')[0m
+Redirected to http://127.0.0.1:3000/articles/4
+Completed in 86ms (DB: 0) | 302 Found [http://127.0.0.1/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-04-22 10:15:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/articles/4]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-04-22 10:15:23) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x25a26a0>) on line #1 of app/views/articles/_form.html.erb:
+1:   <%= f.error_messages %>
+2: 
+3:   <p>
+4:     <%= f.label :title %><br />
+
+    app/views/articles/_form.html.erb:1
+    app/views/articles/edit.html.erb:6
+    app/views/articles/edit.html.erb:3
+
+Rendered rescues/_trace (53.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-04-22 10:15:56) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+ERROR: compiling _run_erb_app47views47articles47edit46html46erb RAISED compile error
+/Users/nolastowe/develop/rubygeek/rubygeek/ruby/trying_sti/app/views/articles/edit.html.erb:6: syntax error, unexpected ')', expecting tASSOC
+...partial => 'form', {:f => f} ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47articles47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Editing article</h1>\n"
+@output_buffer.concat "\n"
+ form_for(@article) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( render :partial => 'form', {:f => f} ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'Show', @article ).to_s); @output_buffer.concat " |\n"
+@output_buffer.concat(( link_to 'Back', article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/nolastowe/develop/rubygeek/rubygeek/ruby/trying_sti/app/views/articles/edit.html.erb:17:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/nolastowe/develop/rubygeek/rubygeek/ruby/trying_sti/app/views/articles/edit.html.erb:6: syntax error, unexpected ')', expecting tASSOC
+...partial => 'form', {:f => f} ).to_s); @output_buffer.concat ...
+                              ^) on line #6 of app/views/articles/edit.html.erb:
+3: <% form_for(@article) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <%= render :partial => 'form', {:f => f} %>
+7: 
+8:   <p>
+9:     <%= f.submit 'Update' %>
+
+    app/views/articles/edit.html.erb:17:in `compile!'
+
+Rendered rescues/_trace (114.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-04-22 10:16:27) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Rendered articles/_form (2.0ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/articles/4/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-04-22 10:16:54) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Rendered articles/_form (1.9ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-04-22 10:16:55) [PUT]
+  Parameters: {"article"=>{"body"=>"hkjh", "title"=>"sdf"}, "commit"=>"Update", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY=", "id"=>"4"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.update_attributes):
+  app/controllers/articles_controller.rb:63:in `update'
+  app/controllers/articles_controller.rb:62:in `update'
+
+Rendered rescues/_trace (36.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-04-22 10:17:10) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Rendered articles/_form (1.2ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/4/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-04-22 10:17:11) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Rendered articles/_form (1.1ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-04-22 10:17:18) [PUT]
+  Parameters: {"article"=>{"body"=>"hkjhsdfsdf", "title"=>"sdfasds"}, "commit"=>"Update", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY=", "id"=>"4"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.update_attributes):
+  app/controllers/articles_controller.rb:63:in `update'
+  app/controllers/articles_controller.rb:62:in `update'
+
+Rendered rescues/_trace (35.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-04-22 10:22:41) [PUT]
+  Parameters: {"article"=>{"body"=>"hkjhsdfsdf", "title"=>"sdfasds"}, "commit"=>"Update", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY=", "id"=>"4"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.update_attributes):
+  app/controllers/articles_controller.rb:63:in `update'
+  app/controllers/articles_controller.rb:62:in `update'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-04-22 10:23:31) [PUT]
+  Parameters: {"article"=>{"body"=>"hkjhsdfsdf", "title"=>"sdfasds"}, "commit"=>"Update", "authenticity_token"=>"cApo5v79XtlXNJGk4yf26jMQMI6fAfNqWTwiE4DvBBY=", "id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;35;1mArticle Update (0.4ms)[0m   [0mUPDATE "articles" SET "title" = 'sdfasds', "body" = 'hkjhsdfsdf', "updated_at" = '2010-04-22 15:23:31' WHERE "id" = 4[0m
+Redirected to http://127.0.0.1:3000/articles/4
+Completed in 13ms (DB: 1) | 302 Found [http://127.0.0.1/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-04-22 10:23:31) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-22 10:23:35) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://127.0.0.1/articles]

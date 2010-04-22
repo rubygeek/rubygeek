@@ -1,13 +1,13 @@
 <p>
   <b>Title:</b>
-  <%=h @articles.title %>
+  <%=h @article.title %>
 </p>
 
 <p>
   <b>Body:</b>
-  <%=h @articles.body %>
+  <%=h @article.body %>
 </p>
 
 
-<%= link_to 'Edit', edit_articles_path(@articles) %> |
+<%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
