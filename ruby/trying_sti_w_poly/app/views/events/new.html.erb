@@ -1,0 +1,27 @@
+<h1>New event</h1>
+
+<% form_for(@event) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :start_at %><br />
+    <%= f.text_field :start_at %>
+  </p>
+  <p>
+    <%= f.label :rsvp_on %><br />
+    <%= f.date_select :rsvp_on %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', events_path %>

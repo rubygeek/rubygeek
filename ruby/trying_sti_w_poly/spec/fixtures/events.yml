@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  start_at: 
+  rsvp_on: 2010-04-23
+  description: MyText
+
+two:
+  name: MyString
+  start_at: 
+  rsvp_on: 2010-04-23
+  description: MyText
