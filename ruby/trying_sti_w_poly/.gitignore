@@ -1,0 +1,11 @@
+.DS_STORE
+log/*.log
+tmp/**/*
+config/database.yml
+.bundle
+db/development_structure.sql
+db/schema.rb
+Gemfile.lock
+rerun.txt
+public/stylesheets/compiled/*.css
+coverage/*
