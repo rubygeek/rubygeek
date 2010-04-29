@@ -13,10 +13,10 @@ class Name
   
   def self.parse(fullname)
     raise ArgumentError, "Name cannot be empty" if fullname.nil?
-    components = fullname.split(' ')
-    first = components.first
-    middle = components.length == 3 ? components[1] : ""
-    last = components.length == 1 ? "" : components.last
+    parts = fullname.split(' ')
+    first = parts.first
+    middle = parts.length == 3 ? parts[1] : ""
+    last = parts.length == 1 ? "" : parts.last
     return Name.new(first, middle, last)
   end
 
