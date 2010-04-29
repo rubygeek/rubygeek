@@ -1,0 +1,1 @@
+Composing Data with aggregations, a way to make a datatype like "name" but store it in the database as three fields.
