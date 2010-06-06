@@ -8,7 +8,7 @@ var http = require('http');
 var server = http.createServer(function(request, response) {
   response.writeHead(200, {"Context-Type" : "text/plain"});
   response.write("Hello World from Node");
-  response.close();
+  response.end();
 });
 
 // Listen on port 8000, IP efaults to 127.0.0.1
