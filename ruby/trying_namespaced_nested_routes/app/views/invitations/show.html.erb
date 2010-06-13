@@ -1,0 +1,23 @@
+<p>
+  <b>Event:</b>
+ 
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @invitation.title %>
+</p>
+
+<p>
+  <b>Sent on:</b>
+  <%=h @invitation.sent_on %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @invitation.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_invitation_path(@invitation) %> |
+<%= link_to 'Back', invitations_path %>
