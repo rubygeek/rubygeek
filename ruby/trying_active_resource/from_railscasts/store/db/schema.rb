@@ -9,13 +9,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100619135913) do
+ActiveRecord::Schema.define(:version => 20100619151354) do
 
-  create_table "products", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "products" because of following StandardError
+#   Unknown type 'false' for column 'discontinued'
 
 end

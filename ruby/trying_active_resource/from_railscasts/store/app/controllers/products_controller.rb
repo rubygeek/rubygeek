@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  before_filter :authorize
+
   # GET /products
   # GET /products.xml
   def index
@@ -79,5 +81,35 @@ class ProductsController < ApplicationController
       format.html { redirect_to(products_url) }
       format.xml  { head :ok }
     end
+  end
+
+  # GET /products/from_apple
+  # GET /products/from_apple.xml
+  def from_apple 
+    @products = Product.all
+    
+    respond_to do |format|
+      format.html 
+      format.xml  { render :xml => @products }
+    end
+  end    
+
+  # PUT /products/1/discontinue
+  # PTU /products/1/discontinue.xml
+  def discontinue
+    @product = Product.find(params[:id])
+    @product.update_attribute(:discontinued, 1)
+    respond_to do |format|
+      format.html { redirect_to(products) }
+      format.xml  { head :ok }
+    end
+  end
+
+  protected
+  
+  def authorize
+    authenticate_or_request_with_http_basic do |username, password| 
+      username == "admin" && password == "secret"
+    end 
   end
 end
