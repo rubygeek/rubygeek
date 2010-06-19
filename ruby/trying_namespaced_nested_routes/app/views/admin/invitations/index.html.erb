@@ -1,0 +1,22 @@
+<h1>Listing invitations</h1>
+
+<table>
+  <tr>
+    <th>Event</th>
+    <th>Title</th>
+    <th>Sent on</th>
+    <th>Description</th>
+  </tr>
+
+<% @invitations.each do |invitation| %>
+  <tr>
+    <td><%=link_to invitation.event.name, event_path(invitation.event) unless invitation.event.blank? %>
+    <td><%=link_to invitation.title, admin_invitation_path(invitation)  %></td>
+    <td><%=h invitation.sent_on.to_s(:short) %></td>
+    <td><%=h invitation.description %></td>
+    <td><%= link_to 'Edit', edit_admin_invitation_path(invitation)%></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to "Create new Invitation", new_admin_event_invitation_url(@event) unless @event.blank?%>

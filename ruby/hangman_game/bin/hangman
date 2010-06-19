@@ -1,6 +1,0 @@
-#!/usr/bin/env ruby
-$LOAD_PATH.push File.join(File.dirname(__FILE__), "/../lib")
-require "hangman"
-
-game = Hangman::Game.new(STDOUT)
-game.start

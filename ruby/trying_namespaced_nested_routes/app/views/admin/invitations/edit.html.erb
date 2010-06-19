@@ -1,0 +1,24 @@
+<h1>Editing invitation</h1>
+
+<% form_for([:admin, @event, @invitation]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :sent_on %><br />
+    <%= f.date_select :sent_on %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', admin_invitation_path %> |
+<%= link_to 'Back', admin_invitations_path %>

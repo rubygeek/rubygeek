@@ -1,0 +1,19 @@
+<p>
+  <b>Name:</b>
+  <%=h @event.name %>
+</p>
+
+<p>
+  <b>Start at:</b>
+  <%=h @event.start_at %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @event.description %>
+</p>
+
+<%= link_to 'Destroy', [:admin, event], :confirm => 'Are you sure?', :method => :delete %> | 
+<%= link_to 'Edit', edit_admin_event_path(@event) %> |
+<%= link_to 'Back', admin_events_path %> | 
+<%= link_to 'Invitations', admin_event_invitations_path(@event) %>
