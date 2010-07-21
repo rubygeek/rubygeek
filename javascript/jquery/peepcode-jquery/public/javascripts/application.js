@@ -146,8 +146,8 @@ jQuery( function () {
         e.preventDefault();
         CountdownTimer.start(25, true);
     });
-
-    $('.completion a').live("click", function(e) {
+// changed live to delegate here
+    $('#tasks ul').delegate('.completion a', 'click', function(e) {
         $(this).toggleTaskState();
         return false;
     });
