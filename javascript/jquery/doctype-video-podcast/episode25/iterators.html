@@ -1,0 +1,26 @@
+<html>
+  <head></head>
+  <body>
+	<script type="text/javascript">
+		function Person(name, age) {
+			this.name = name;
+			this.age = age;
+		}
+		Person.prototype.species = 'Human'
+		
+		var joe = new Person('Joe', '20');
+		var key;
+
+		// grabs even things not in Person, but in the prototype
+		for (key in joe) {
+			alert(key + ": "+ joe[key]);
+		}
+
+		// grabs only those keys defined in Person
+		for (key in joe) {
+			if (joe.hasOwnProperty(key))
+			alert(key + ": "+ joe[key]);
+		}
+	</script>
+  </body>
+</html>
