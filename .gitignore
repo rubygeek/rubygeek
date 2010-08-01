@@ -5,4 +5,5 @@
 java/FriendList/*
 javascript/headfirst/*
 ruby/trying_sinatra/sample/*
+*.swp
 
