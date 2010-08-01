@@ -1,2 +1,16 @@
-%h1 Store#index
-%p Find me in app/views/store/index.html.haml
+- if notice 
+  %p#notice
+    = notice
+
+%h1 Your Pragmatic Catalog
+
+#store
+  - @products.each do |product|
+    .entry
+      = image_tag(product.image_url)
+      %h3
+        = product.description
+      = sanitize product.description
+      .price_line
+        .price
+          = product.price

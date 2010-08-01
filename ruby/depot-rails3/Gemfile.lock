@@ -78,6 +78,7 @@ GEM
       rake (>= 0.8.3)
       thor (~> 0.14.0)
     rake (0.8.7)
+    rcov (0.9.8)
     rspec (2.0.0.beta.19)
       rspec-core (= 2.0.0.beta.19)
       rspec-expectations (= 2.0.0.beta.19)
@@ -110,6 +111,7 @@ DEPENDENCIES
   haml
   rails (= 3.0.0.rc)
   rails3-generators
+  rcov
   rspec-rails (>= 2.0.0.beta.19)
   sqlite3-ruby (= 1.2.5)
   webrat (>= 0.7.2.beta.1)

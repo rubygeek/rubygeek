@@ -11,6 +11,10 @@ gem 'haml'
 
 gem 'factory_girl_rails', :group => :test
 
+group :development do
+  gem 'rcov'
+end
+
 group :development, :test do
   gem 'rspec-rails', '>= 2.0.0.beta.19'
   gem 'cucumber-rails' , '>= 0.3.2'
