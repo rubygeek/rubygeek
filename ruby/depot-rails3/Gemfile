@@ -6,7 +6,14 @@ gem 'rails', '3.0.0.rc'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
+gem 'rails3-generators'
 gem 'haml'
+
+gem 'factory_girl_rails', :group => :test
+
+group :development, :test do
+  gem 'rspec-rails', '>= 2.0.0.beta.19'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
