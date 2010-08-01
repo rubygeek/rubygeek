@@ -2,17 +2,7 @@
 *.sqlite
 *.sqlite3
 .idea/*
-java/FriendList/
-javascript/headfirst/Fix_for_Internet_Explorer.rtf
-javascript/headfirst/HFJS_ch02_IE.zip
-javascript/headfirst/donuts/
-javascript/headfirst/donuts1_IE.html
-javascript/headfirst/donuts2_IE.html
-javascript/headfirst/donuts3_IE.html
-javascript/headfirst/donuts4_IE.html
-javascript/headfirst/donuts5_IE.html
-javascript/headfirst/jquery.js
-javascript/jquery/form_sample/README
-javascript/netzke/
-ruby/trying_sinatra/sample/
+java/FriendList/*
+javascript/headfirst/*
+ruby/trying_sinatra/sample/*
 
