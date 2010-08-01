@@ -1,0 +1,16 @@
+%p
+  %b Title:
+  = @product.title
+%p
+  %b Description:
+  = @product.description
+%p
+  %b Image url:
+  = @product.image_url
+%p
+  %b Price:
+  = @product.price
+
+= link_to 'Edit', edit_product_path(@product)
+\|
+= link_to 'Back', products_path

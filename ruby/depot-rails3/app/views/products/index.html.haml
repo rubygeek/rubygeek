@@ -1,21 +1,25 @@
-#product_list
-  %h1
-    Listing products
+%h1 Listing products
 
-  %table
-    - @products.each do |product| 
-      %tr{:class => cycle('list_line_odd', 'list_line_even')}
-        %td
-          = image_tag(product.image_url)
-        %td
-          = product.description
-        %td
-          = product.price
-        %td
-          = link_to 'Show', product
-          = link_to 'Edit', edit_product_path(product)
-          = link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete 
+%table
+  %tr
+    %th Title
+    %th Description
+    %th Image url
+    %th Price
+    %th
+    %th
+    %th
 
-  %br
+  - @products.each do |product|
+    %tr
+      %td= product.title
+      %td= product.description
+      %td= product.image_url
+      %td= product.price
+      %td= link_to 'Show', product
+      %td= link_to 'Edit', edit_product_path(product)
+      %td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
 
-  = link_to 'New Product', new_product_path 
+%br
+
+= link_to 'New product', new_product_path
