@@ -2,5 +2,8 @@ This string is your language: either  en or fr, add ?locale=fr to your url to se
 
 <%= t('hello') %>
 
-<%= country_select("user", "country_name") %>
+<br/><br/>
+
+<%= localized_country_select_tag('user', nil, ['us', 'fr'], :include_blank => 'Please choose...') %>
+
 
