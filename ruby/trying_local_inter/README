@@ -2,4 +2,10 @@ Trying out localization and internationalization
 
 adding ?locale=fr to end of url, changes the locale to french
 
+langauges are stored in 
+config/locales/
+  en.yml
+  fr.yml
+
+
 added country plugin to see countries name in the current locale. 
