@@ -1,0 +1,7 @@
+Trying has many through in a simple example
+
+user has many invitations
+user can accept or deny an invitation
+
+acceptance is stored in the join model
+
