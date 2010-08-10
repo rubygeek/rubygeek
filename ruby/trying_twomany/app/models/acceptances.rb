@@ -1,4 +1,4 @@
 class Acceptances < ActiveRecord::Base
-  has_many :user
-  has_many :invitation
+  has_many :users
+  has_many :invitations
 end
