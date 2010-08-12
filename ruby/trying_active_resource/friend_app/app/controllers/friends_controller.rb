@@ -26,10 +26,7 @@ class FriendsController < ApplicationController
   def new
     @friend = Friend.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @friend }
-    end
+     render :xml => @friend.to_xml  
   end
 
   # GET /friends/1/edit

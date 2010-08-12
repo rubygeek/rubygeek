@@ -1,5 +1,5 @@
-class CreateAcceptances < ActiveRecord::Migration
-  def self.up
+class CreateAcceptances < ActiveRecord::Migration 
+   def self.up
     create_table :acceptances do |t|
       t.integer :user_id
       t.integer :invitation_id

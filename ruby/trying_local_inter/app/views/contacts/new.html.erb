@@ -1,9 +1,10 @@
+<%= formtastic_stylesheet_link_tag %>
 <% semantic_form_for @address, :url => '#' do |f| %>
   <%= f.input :street %>
   <%= f.input :city %>
   <%= f.input :state %>
   <%= f.input :zip %>
-  <%= f.input :country  %>
+  <%= f.input :country, {'us', 'fr'}  %>
   <%= f.buttons %>
 
 <% end %>
