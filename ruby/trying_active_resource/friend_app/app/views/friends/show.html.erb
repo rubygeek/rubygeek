@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @friend.name %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @friend.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @friend.state %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%=h @friend.twitter %>
+</p>
+
+
+<%= link_to 'Edit', edit_friend_path(@friend) %> |
+<%= link_to 'Back', friends_path %>

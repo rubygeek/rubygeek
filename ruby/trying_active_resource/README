@@ -1,3 +1,8 @@
-Resources
-* Using datamapper http://ruby.about.com/od/sinatra/a/datamapper.htm
+from_railscasts 
+- from rails cast episode on active record
 
+friend_app
+- app to keep track of friends
+
+admin_friend_app
+- app to manage the friend app 
