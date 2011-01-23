@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>sample</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+   <style type="text/css">
+     #gallery { 
+ 			display: none;
+			position: absolute;
+			top: 10;
+			left: 30;
+			width: 500px;
+			height: 400px;
+			padding: 16px;
+			border: 2px solid red;
+			background-color: white;
+			z-index:1002;
+			overflow: auto;
+ 
+     }
+     #gallery img { display: block; }
+     #gallery a { padding: 5px 3px 0 0; float: left; display: block; }
+
+     #lightbox { 
+     	display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+     }
+
+     a#close_link {
+       display: block;
+       float: right;
+       clear:both;
+       background: white;
+       padding: 3px;
+      }
+   <!-- Lightbox code from: -->
+   <!-- http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/-->
+   </style>
+   <script type="text/javascript">
+     $(document).ready(function() {
+       
+      $('#gallery_link').click( function() {
+         $('#lightbox').show();
+         $('#gallery').show();
+      });
+
+
+      $('#close_link').click( function() {
+        $('#lightbox').hide();
+        $('#gallery').hide();   
+      }); 
+
+      $('#gallery a').click( function() {
+        $('#big').attr('src', $(this).attr('data-photo'));      
+      });
+     });
+   </script>
+  </head>
+
+  <body>
+   <div id="lightbox"></div>
+   This is a page where there will be a popup gallery of some images.
+  <br/><br/>
+
+  <a id="gallery_link" href="#">View</a>
+    
+  <br/><br/>
+
+  <div id="gallery">
+    <a href="#" id="close_link">Close</a>
+    <img id="big" height="300" src="photos/image1.jpg">
+    <a href="#" data-photo="photos/image1.jpg"><img src="photos/thumb_image1.jpg" /></a>
+    <a href="#" data-photo="photos/image2.jpg"><img src="photos/thumb_image2.jpg" /></a>
+  </div>
+
+  </body>
+</html>
