@@ -15,10 +15,73 @@ var SnakeGame = function(canvas) {
       timer,                       // Game Loop
       food;                        // current food position
 
+  function bit(x,y) {
+    return {x: x, y:y};
+  }
+
+  function startGame() {
+    heading = EAST;
+    snakeBits.unshift(bit(4,4));
+    snakeBits.unshift(bit(5, 4));
+
+    //placeFood();
+   
+    clearInterval(timer);
+    timer = setInterval(gameLoop, 100); //10 times a second
+  } 
+
+  function gameLoop() {
+    advanceSnake();
+    checkCollision();
+    clearCanvas();
+    drawSnake();
+    drawFood();
+  }
+
+  function advanceSnake() {
+  }
+
+  function checkCollision() {
+  }
+
+  function clearCanvas() {
+    ctx.clearRect(0,0,canvas.width, canvas.height);
+  }
+
+  function drawSnake() {
+    
+  }
+
+  function drawFood() {
+    var i, length = snakeBits.length;
+    for(i = 0; i < length; i++){
+      drawBit(snakeBits[i]);
+    }
+  }
+  
+  function drawBit(bit) {
+    drawInCell(bit.x, bit.y, function() {
+      ctx.beginPath();
+      ctx.rect(0,0,CELL_SIZE, CELL_SIZE);
+      ctx.fill(); }); 
+  }
+  
+  function drawInCell(cellX, cellY, fn) {
+    var x = cellX * CELL_SIZE,
+        y = cellY * CELL_SIZE;
+    ctx.save(); 
+    ctx.translate(x, y);
+    fn();
+    ctx.restore();
+  }
+
+  return {
+    start: startGame
+  }
 };
 
 $(function() {
  window.game = SnakeGame('#game');
-  // game.start();
+   game.start();
 });
 
