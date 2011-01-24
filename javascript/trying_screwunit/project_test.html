@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <!-- These are all of the necessary javascript and css files required to run your tests -->
+    <script src="lib/jquery-1.2.6.js"></script>
+    <script src="lib/jquery.fn.js"></script>
+    <script src="lib/jquery.print.js"></script>
+    <script src="lib/screw.builder.js"></script>
+    <script src="lib/screw.matchers.js"></script>
+    <script src="lib/screw.events.js"></script>
+    <script src="lib/screw.behaviors.js"></script>
+    <link rel="stylesheet" href="lib/screw.css">
+    
+    <script type="text/javascript" src="MagicCard.js"></script>
+    
+    <script type="text/javascript">
+      Screw.Unit(function() {
+
+
+        describe("when card is created", function() {
+          before(function() {
+              card = MagicCard.init("Hells Thunder", "3R");
+          });
+          it("name should be Hells Thunder", function() {
+            expect(card.name).to(equal, "Hells Thunder");
+          });
+          it("mana should be 3R", function() {
+            expect(card.mana).to(equal, "3R");
+          });
+          it("log should be You played: Hells Thunder", function() {
+            expect(card.log()).to(equal, "You played: Hells Thunder");
+          });
+        }); 
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
