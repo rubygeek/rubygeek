@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="qunit/qunit.css" type="text/css" media="screen" />
+<script type="text/javascript" src="qunit/qunit.js"></script>
+<script type="text/javascript" src="MagicCard.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+    
+test("card initialization for name", function() {
+  var card = MagicCard.init("Hells Thunder");
+  equals( card.name, 'Hells Thunder', "card name is correct" );
+});
+
+test("card initialization for mana", function() {
+  var card = MagicCard.init("Hells Thunder", '3R');
+  equals( card.mana, '3R', "card name is correct" );
+});
+
+test("card log", function() {
+  var card = MagicCard.init("Card");
+  equals( card.log(), 'You played: Card', 'log is correct' );
+});
+
+
+
+  });
+  </script>
+  
+</head>
+<body>
+  <h1 id="qunit-header">QUnit example</h1>
+ <h2 id="qunit-banner"></h2>
+ <div id="qunit-testrunner-toolbar"></div>
+ <h2 id="qunit-userAgent"></h2>
+ <ol id="qunit-tests"></ol>
+ <div id="qunit-fixture">test markup, will be hidden</div>
+</body>
+</html>
+
+
