@@ -1,0 +1,15 @@
+body {
+    background-color: #111;
+    font-family: "Helvetica";
+    overflow: hidden;
+    margin: 0;
+}
+
+p {
+    color: #999;
+}
+
+#map {
+
+}
+
