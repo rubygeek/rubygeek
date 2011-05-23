@@ -1,0 +1,10 @@
+Testsuite: com.sample.PostTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.4 sec
+------------- Standard Output ---------------
+--Output from testCreatePost--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreatePost--
+------------- ---------------- ---------------
+
+Testcase: testCreatePost took 0.369 sec

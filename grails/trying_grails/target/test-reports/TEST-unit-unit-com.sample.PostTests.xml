@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Nola-Stowes-MacBook-Pro.local" name="com.sample.PostTests" tests="1" time="0.4" timestamp="2011-03-01T18:38:12">
+  <properties />
+  <testcase classname="com.sample.PostTests" name="testCreatePost" time="0.368" />
+  <system-out><![CDATA[--Output from testCreatePost--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreatePost--
+]]></system-err>
+</testsuite>

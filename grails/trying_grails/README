@@ -1,1 +1,8 @@
 Trying out grails. Creating a typical blog with comments.
+
+
+Domain models:
+* post has many comments
+* comment belongs to post
+
+
