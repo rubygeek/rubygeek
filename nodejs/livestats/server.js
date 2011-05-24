@@ -1,6 +1,6 @@
 require.paths.unshift(__dirname + "/vendor"); //add vendor to beginning of path
 
-process.addListener('uncaugh exception', function (err, stack) {
+process.addListener('uncaught exception', function (err, stack) {
   console.log('------------------');
   console.log('Exception: ' + err);
   console.log(err.stack);
