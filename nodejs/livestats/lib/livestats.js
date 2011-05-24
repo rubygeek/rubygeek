@@ -40,7 +40,18 @@ LiveStats.prototype.createHttpServer = function() {
   	});
 
   	request.addListener('end', function() {
-  		file.serve(request, response);
+ 
+  		if (request.url == '/config.json' && request.method == 'GET') {
+  		  response.writeHead(200, {
+  		    'Content-Type' : 'application/x-javascript'
+  		  });
+  		  var jsonString = JSON.stringify({
+  		    port: self.settings.port
+  		  });
+  		  response.write(jsonString)
+  		} else {
+  		  file.serve(request, response);
+  		}
   	});
   });
   return server;
