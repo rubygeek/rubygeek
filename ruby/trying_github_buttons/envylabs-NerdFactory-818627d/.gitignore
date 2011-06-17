@@ -1,0 +1,6 @@
+.bundle
+log/*.log
+tmp/
+*.swp
+db/*.sqlite3
+!db/development.example.sqlite3
