@@ -44,10 +44,7 @@ class SnippitsController < ApplicationController
   def create
     @snippit = Snippit.new(params[:snippit])
     if @snippit.save
-      uri = URI.parse('http://pygments.appspot.com/')
-      request = Net::HTTP.post_form(uri, {'lang' => @snippit.language,
-        'code' => @snippit.code})
-      @snippit.update_attribute(:highlighted_code, request.body)
+      Resque.enqueue(SnippitHighlighter, @snippit.id)
       redirect_to @snippit, :notice => "Successfully created snippit"
     else
       render :new 

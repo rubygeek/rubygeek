@@ -11,8 +11,12 @@
 </p>
 
 <p>
-  <b>Code:</b>
-  <%= @snippit.highlighted_code.html_safe %>
+  <strong>Code</strong><br/>
+  <% if @snippit.highlighted_code.present? %>
+    <%= @snippit.highlighted_code.html_safe %>
+  <% else %>
+    <pre><%= @snippit.code %></pre>
+  <% end %>
 </p>
 
 
