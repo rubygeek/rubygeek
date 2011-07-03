@@ -1,0 +1,27 @@
+<h1>Listing snippits</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Language</th>
+    <th>Code</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @snippits.each do |snippit| %>
+  <tr>
+    <td><%= snippit.name %></td>
+    <td><%= snippit.language %></td>
+    <td><%= snippit.code %></td>
+    <td><%= link_to 'Show', snippit %></td>
+    <td><%= link_to 'Edit', edit_snippit_path(snippit) %></td>
+    <td><%= link_to 'Destroy', snippit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Snippit', new_snippit_path %>

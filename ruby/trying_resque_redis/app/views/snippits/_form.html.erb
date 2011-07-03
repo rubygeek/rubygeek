@@ -1,0 +1,29 @@
+<%= form_for(@snippit) do |f| %>
+  <% if @snippit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@snippit.errors.count, "error") %> prohibited this snippit from being saved:</h2>
+
+      <ul>
+      <% @snippit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.select :language, %w(ruby python perl php java) %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.text_area :code %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
