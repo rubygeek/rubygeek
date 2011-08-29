@@ -1,0 +1,11 @@
+= RailsCasts Example Application
+
+Run these commands to try it out.
+
+  bundle
+  rake db:migrate
+  rails s
+
+
+-- modified by Nola for practice following along with 
+http://railscasts.com/episodes/269-template-inheritance
