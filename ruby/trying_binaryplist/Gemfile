@@ -1,0 +1,3 @@
+source 'http://rubygems.org'
+
+gem 'binary_plist' #, :git => 'https://github.com/samsoffes/binary_plist.git'

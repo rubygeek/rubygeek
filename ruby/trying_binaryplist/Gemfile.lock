@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.1.0)
+      multi_json (~> 1.0)
+    binary_plist (0.0.5)
+      activesupport (> 2.0)
+    multi_json (1.0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  binary_plist
