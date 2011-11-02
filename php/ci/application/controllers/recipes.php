@@ -1,27 +1,30 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Recipe extends CI_Controller {
+class Recipes extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
+  public function __construct() {
+    parent::__construct();
+    $this->load->model('recipe');
+    $this->load->library('pagination');
+  }
+
 	public function index() {
 	  $data['page_title'] = "Index";
 	  $this->load->view("header", $data);
-    $this->load->model("recipe_model");
-    $data["recipes"] = $this->recipe_model->get_all();
+
+    $recipe_list = new Recipe();
+    $total_rows = $recipe_list->count();
+   
+    $recipe_list->order_by('title');
+
+    $data["recipes"] = $recipe_list->get(5, $offset)->all;
+
+    $config['base_url'] = site_url("recipes");
+    $config['total_rows'] = $total_rows;
+    $config['per_page'] = '5';
+    $config['uri_segment'] = 2;
+    $this->pagination->initialize($config);
+
     $this->load->view("recipes/index", $data);
     $this->load->view('footer');
 	}
