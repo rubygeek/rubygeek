@@ -1,4 +1,5 @@
-<?= anchor('recipe/new_recipe', 'Add New Recipe', 'title="add new recipe"');?>
+<?= anchor('recipes/new_recipe', 'Add New Recipe', 'title="add new recipe"');?>
+<?= $pagination ?>
 <br/>
 <table>
   <tr>
@@ -8,10 +9,10 @@
   </tr>
 <?php foreach($recipes as $r) : ?>
   <tr>
-    <td><?= $r->title ?></td>
+    <td><?= anchor("recipes/show_recipe/$r->id",$r->title) ?></td>
     <td><?= $r->description ?></td>
     <td><?= $r->source ?></td>
-    <td><?= anchor('recipe/edit/$r->id')?></td>
+    <td><?= anchor("recipe/edit/$r->id")?></td>
   </tr>
 <?php endforeach;?>
 </table>
