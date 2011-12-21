@@ -1,0 +1,7 @@
+= Uhoh
+
+This project rocks and uses MIT-LICENSE.
+
+To run migrations: 
+
+rake uhoh:install:migrations

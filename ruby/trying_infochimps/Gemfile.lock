@@ -1,0 +1,31 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.6)
+    chimps (0.3.6)
+      addressable
+      configliere (>= 0.3.2)
+      json
+      rest-client (>= 1.6.1)
+    columnize (0.3.4)
+    configliere (0.4.8)
+      json
+    json (1.6.1)
+    linecache (0.46)
+      rbx-require-relative (> 0.0.4)
+    mime-types (1.16)
+    rbx-require-relative (0.0.5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    ruby-debug (0.10.4)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.4.0)
+    ruby-debug-base (0.10.4)
+      linecache (>= 0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chimps
+  ruby-debug
