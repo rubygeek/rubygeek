@@ -44,7 +44,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
-    minitest (2.11.0)
     multi_json (1.0.4)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -97,6 +96,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  minitest
   rails (= 3.2.0)
   ruby-debug19
