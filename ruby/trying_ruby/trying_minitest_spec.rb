@@ -1,5 +1,3 @@
-
-require 'rubygems'
 require 'minitest/autorun'
 
 describe "Trying Minitest spec" do
