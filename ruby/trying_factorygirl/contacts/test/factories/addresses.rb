@@ -5,5 +5,10 @@ FactoryGirl.define do
     street1 "123 Street"
     street2 ""
     zipcode_id 1
+
+    factory :address_with_contact do
+      association :contact, factory: :contact
+      association :state, factory: :state
+    end
   end
 end
