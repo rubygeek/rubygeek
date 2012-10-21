@@ -1,0 +1,21 @@
+<ul class="team-member-list">
+
+  <% @team_members.each do |team_member| %>
+
+  <li class="team-member">
+
+    <span class="team-member-name">
+
+      <%= link_to @team_member.name , @team_member.twitter_url %>
+
+    </span>
+
+    <%= @team_member.bio %>
+
+    <%= image_tag @team_member.image_url , :class => "team-member-image" %>
+
+  </li>
+
+  <% end %>
+
+</ul>
