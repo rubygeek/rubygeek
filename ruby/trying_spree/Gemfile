@@ -1,0 +1,26 @@
+source :rubygems
+
+gem 'rails', '3.2.12'
+gem 'sqlite3'
+
+gem 'spree', :git => 'git@github.com:spree/spree.git', :tag => 'v1.1.6'
+gem 'spree_gateway', :git => 'git://github.com/spree/spree_gateway.git', :branch => "1-1-stable" # make sure to include
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'jquery-rails'
+
+group :development, :test do
+  gem 'minitest'
+  gem 'debugger'
+end
