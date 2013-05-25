@@ -7,3 +7,4 @@ javascript/headfirst/*
 ruby/trying_sinatra/sample/*
 *.swp
 .idea
+project_euler/*
