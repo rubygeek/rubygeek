@@ -1,0 +1,23 @@
+Test suite tests: RUNNING...
+
+KataCalc
+  - should sum the empty string
+
+add single number
+  - should add positive number FAILED [1]
+  - should add negative number FAILED [2]
+
+1) add single number should add positive number
+uncaught exception: PatternMatchFail (src/KataCalc.hs:4:1-16: Non-exhaustive patterns in function sumString
+)
+
+2) add single number should add negative number
+uncaught exception: PatternMatchFail (src/KataCalc.hs:4:1-16: Non-exhaustive patterns in function sumString
+)
+
+Randomized with seed 4611685480327330260
+
+Finished in 0.0003 seconds
+3 examples, 2 failures
+Test suite tests: FAIL
+Test suite logged to: dist/test/katacalc-0.1.0.0-tests.log
