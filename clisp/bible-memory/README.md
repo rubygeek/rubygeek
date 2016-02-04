@@ -7,3 +7,5 @@ Other ideas might be to blank out every other word with __.
 Scramble the letters of each word, like a puzzle.
 
 Maybe more ideas as I work on it more.
+
+I did a version of this for a Code for the Kingdom Hackathon. https://github.com/rubygeek/bible_memory
