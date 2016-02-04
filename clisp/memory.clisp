@@ -1,0 +1,9 @@
+
+(setq path (merge-pathnames "verse.txt"))
+
+(with-open-file (s path)
+  (do
+    ((l (read-line s) (read-line s nil 'eof)))
+    ((eq l 'eof) "Reached end of file.")
+    (format t "~&*** ~A~%" l)))
+    
