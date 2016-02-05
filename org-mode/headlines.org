@@ -1,0 +1,25 @@
+* one headline
+** next level
+*** third level
+**** fourth level
+***** fifth level
+****** sixth level
+******* seventh level
+******** eighth level
+
+My list
+- C-c C-n :: next heading
+- C-C C-p :: prev heading
+- tab :: subtree cycling
+- S-tab :: global cycling
+
+The Docs[fn:1] are here 
+
+[fn:1] www.doc.og
+
+must start with fn 
+
+Ctrl-C-C 
+jump between fn and definition
+
+

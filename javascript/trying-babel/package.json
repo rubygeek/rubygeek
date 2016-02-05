@@ -1,0 +1,14 @@
+{
+  "name": "trying-babel",
+  "version": "1.0.0",
+  "description": "Trying to see if javascript is better now",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nola Stowe",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
