@@ -96,6 +96,6 @@
          acc []]
     (if (empty? ls)
       acc
-      (recur f (conj acc (f (first ls)))))))
+      (recur (rest ls) (conj acc (f (first ls)))))))
 
 (loop-mymap inc [1 1 2 3])

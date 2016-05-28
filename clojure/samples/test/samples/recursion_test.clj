@@ -22,3 +22,9 @@
 
 (deftest test-loop-fact
   (is (= 6 (loop-fac 3))))
+
+(deftest test-mymap
+  (is (= [2 2 3 4] (mymap inc [1 1 2 3]))))
+
+(deftest test-loop-mymap
+  (is (= [2 2 3 4] (loop-mymap inc [1 1 2 3]))))
