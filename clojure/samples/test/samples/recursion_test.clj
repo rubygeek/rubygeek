@@ -13,3 +13,12 @@
 
 (deftest test-loop-recursive-reverse
   (is (= [4 3 2 1] (loop-rrev [1 2 3 4]))))
+
+(deftest test-factorial
+  (is (= 6 (factorial 3))))
+
+(deftest test-tail-fact
+  (is (= 6 (tail-fac 3))))
+
+(deftest test-loop-fact
+  (is (= 6 (loop-fac 3))))

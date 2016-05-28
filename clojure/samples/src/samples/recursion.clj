@@ -47,4 +47,34 @@
 
 (loop-rrev [2 3 4 5 6])
 
+;; factorial
+;; base case 1 
+;; advancing n -1 
+;; initializing passing n 
+
+(defn factorial [n]
+  (if (zero? n)
+    1
+    (* n (factorial (dec n)))))
+
+;; tail factorial
+;; base case: 1 return acc
+;; advancing dec n
+;; intializing passing n and acc
+(defn tail-fac-helper [n acc]
+  (if (zero? n)
+    acc
+    (recur (dec n) (* n acc))))
+
+(defn tail-fac [n]
+  (tail-fac-helper n 1))
+
+(defn loop-fac [n]
+  (loop [n n
+         acc 1]
+    (if (zero? n)
+      acc
+      (recur (dec n) (* n acc)))))
+
+
 
