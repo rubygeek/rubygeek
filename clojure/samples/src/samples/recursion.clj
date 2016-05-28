@@ -90,7 +90,6 @@
   (domap f ls []))
 
 
-;; not working :/
 (defn loop-mymap [f ls]
   (loop [ls ls
          acc []]
