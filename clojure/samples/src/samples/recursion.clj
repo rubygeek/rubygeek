@@ -76,5 +76,26 @@
       acc
       (recur (dec n) (* n acc)))))
 
+;; making my own map function
+
+;; base return acc if list empty
+;; advancing  pass rest of list to domap
+;; initializing pass f ls and empty vector
+(defn domap [f ls acc]
+  (if (empty? ls)
+    acc
+    (recur f (rest ls) (conj acc (f (first ls))) )))
+
+(defn mymap [f ls]
+  (domap f ls []))
 
 
+;; not working :/
+(defn loop-mymap [f ls]
+  (loop [ls ls
+         acc []]
+    (if (empty? ls)
+      acc
+      (recur f (conj acc (f (first ls)))))))
+
+(loop-mymap inc [1 1 2 3])
