@@ -18,3 +18,16 @@
 
 ;;=============================================
 
+;;============ Problem 83 =====================
+
+(defn eighty-three [& bools]
+  (or (and (some true? bools) 
+           (some false? bools))
+      false))
+
+(defn better-eighty-three [& bools]
+  (= 2 (count (set bools))))
+;;==============================================
+
+
+

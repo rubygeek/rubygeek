@@ -15,3 +15,8 @@
 (deftest better-thirty-four-second
   (is (= [-2 -1 0 1] (better-thirty-four -2 2))))
 ;; ===============================================
+
+(deftest eighty-three-first
+  (is (= false (eighty-three false false))))
+(deftest eighty-three-second
+  (is (= true (eighty-three true false)) ))
