@@ -1,0 +1,17 @@
+(ns samples.fourclojure-test
+  (:require [clojure.test :refer :all]
+            [samples.fourclojure :refer :all]))
+
+;; ================ Tests for Problem 34 ========
+(deftest thirty-four-first
+  (is (= [1 2 3] (thirty-four 1 4))))
+
+(deftest thirty-four-second
+  (is (= [-2 -1 0 1] (thirty-four -2 2))))
+
+(deftest thirty-four-third 
+  (is (= [5 6 7] (thirty-four 5 8))))
+
+(deftest better-thirty-four-second
+  (is (= [-2 -1 0 1] (better-thirty-four -2 2))))
+;; ===============================================
