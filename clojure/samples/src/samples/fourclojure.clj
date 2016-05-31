@@ -29,6 +29,16 @@
 
 ;;=============================================
 
+;;============ Problem 49 =====================
+
+(defn fourty-nine [how-many the-seq]
+  (let [first-group (take how-many the-seq)
+        last-group (drop how-many the-seq)]
+    (vector first-group last-group)))
+
+;;=============================================
+
+
 ;;============ Problem 83 =====================
 
 (defn eighty-three [& bools]
