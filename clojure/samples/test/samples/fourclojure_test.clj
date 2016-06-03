@@ -33,3 +33,14 @@
 (deftest eighty-three-second
   (is (= true (eighty-three true false)) ))
 ;; ================================================
+
+(deftest onesixsix_all
+  (let [__ better-onesixsix]
+    (is (= :eq (__ < 4 4)))
+    (is (= :gt (__ < 5 1)))
+    (is (= :gt (__ > 0 2)))
+    (is (= :lt (__ (fn [x y] (< (mod x 5) (mod y 5))) 21 3)))
+    (is (= :eq (__ (fn [x y] (< (count x) (count y))) "pear" "plum")))))
+
+;; ================================================
+
