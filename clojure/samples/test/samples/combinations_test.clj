@@ -1,0 +1,42 @@
+(ns samples.combinations-test
+  (:require [clojure.test :refer :all]
+            [samples.combinations :refer :all]))
+
+(deftest my-identity-keyword
+  (let [mine (my-identity :nola)
+        theirs (identity :nola)]
+  (is (= mine theirs))))
+
+(deftest my-identity-number
+  (let [mine (my-identity 5)
+        theirs (identity 5)]
+  (is (= mine theirs))))
+
+(deftest my-identity-string
+  (let [mine (my-identity "nola")
+        theirs (identity "nola")]
+  (is (= mine theirs))))
+
+;;---------------------------------------
+
+(deftest my-constantly-symbol
+  (let [mine (my-constantly :nola)
+        theirs (constantly :nola)]
+  (is (= :nola (mine 1) (theirs 1)))))
+
+(deftest my-constantly-string
+  (let [mine (my-constantly "nola")
+        theirs (constantly "nola")]
+  (is (= "nola" (mine "red") (theirs "red")))))
+
+(deftest my-constant-number
+  (let [mine (my-constantly 42)
+        theirs (constantly 42)]
+  (is (= 42 (mine :apple) (theirs :apple)))))
+
+;;------------------------------------------
+
+(deftest my-complement-test
+  (let [mine (my-complement true?)
+        theirs (complement true?)]
+  (is (= false (mine true) (theirs true)))))
