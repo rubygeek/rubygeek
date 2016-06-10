@@ -11,3 +11,6 @@
   (fn [f]
     (not f)))
 
+(defn my-partial [f & xs]
+  (fn [& ys]
+    (apply f (concat xs ys))))

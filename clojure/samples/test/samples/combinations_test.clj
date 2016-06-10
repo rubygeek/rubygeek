@@ -40,3 +40,10 @@
   (let [mine (my-complement true?)
         theirs (complement true?)]
   (is (= false (mine true) (theirs true)))))
+
+;;------------------------------------------
+
+(deftest my-partial-test
+  (let [mine (my-partial + 3)
+        theirs (partial + 3)]
+  (is (= 8 (mine 5) (theirs 5)))))
