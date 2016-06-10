@@ -14,3 +14,9 @@
 (defn my-partial [f & xs]
   (fn [& ys]
     (apply f (concat xs ys))))
+
+(defn my-fnil [f default]
+  (fn [x & xs]
+    (if (nil? x)
+      (apply f default xs)
+      (apply f x xs))))

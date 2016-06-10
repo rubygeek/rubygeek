@@ -47,3 +47,10 @@
   (let [mine (my-partial + 3)
         theirs (partial + 3)]
   (is (= 8 (mine 5) (theirs 5)))))
+
+;;------------------------------------------
+
+(deftest my-fnil-test 
+  (let [mine (my-fnil inc 0)
+        theirs (fnil inc 0)]
+  (is (= 1 (mine nil) (theirs nil)))))
