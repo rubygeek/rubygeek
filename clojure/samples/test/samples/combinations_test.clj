@@ -54,3 +54,11 @@
   (let [mine (my-fnil inc 0)
         theirs (fnil inc 0)]
   (is (= 1 (mine nil) (theirs nil)))))
+
+;;-----------------------------------------
+
+(deftest my-comp-test
+  (let [mine (fn [x] ((my-comp str inc) x))
+        theirs (fn [x] ((comp str inc) x))]
+  (is (= "1" (mine 0) (theirs 0)))))
+

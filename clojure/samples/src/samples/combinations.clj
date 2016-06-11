@@ -20,3 +20,7 @@
     (if (nil? x)
       (apply f default xs)
       (apply f x xs))))
+
+(defn my-comp [f g]
+  (fn [x]
+    (f (g x))))
