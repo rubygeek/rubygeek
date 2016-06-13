@@ -58,8 +58,8 @@
 ;;-----------------------------------------
 
 (deftest my-comp-test
-  (let [mine (fn [x] ((my-comp str inc) x))
-        theirs (fn [x] ((comp str inc) x))]
+  (let [mine (my-comp str inc) 
+        theirs (comp str inc)]
   (is (= "1" (mine 0) (theirs 0)))))
 
 ;;------------------------------------------
