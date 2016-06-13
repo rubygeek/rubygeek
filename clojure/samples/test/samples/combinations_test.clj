@@ -62,3 +62,11 @@
         theirs (fn [x] ((comp str inc) x))]
   (is (= "1" (mine 0) (theirs 0)))))
 
+;;------------------------------------------
+
+(deftest my-juxt-test
+  (let [mine   (fn [x] (my-juxt inc str) x)
+        theirs (fn [x] (juxt    inc str) x) ]
+    (is (= [6 "5"] (mine 5) (theirs 5)))))
+
+

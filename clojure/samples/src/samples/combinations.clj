@@ -24,3 +24,9 @@
 (defn my-comp [f g]
   (fn [x]
     (f (g x))))
+
+(defn my-juxt [f g]
+  (fn [x] 
+    [(f x) (g x)]))
+
+
