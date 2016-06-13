@@ -65,8 +65,8 @@
 ;;------------------------------------------
 
 (deftest my-juxt-test
-  (let [mine   (fn [x] (my-juxt inc str) x)
-        theirs (fn [x] (juxt    inc str) x) ]
-    (is (= [6 "5"] (mine 5) (theirs 5)))))
+  (let [mine   (my-juxt inc str)
+        theirs (juxt    inc str)  ]
+    (is (= [6 "5"] (mine 5) (theirs 5) ))))
 
 
