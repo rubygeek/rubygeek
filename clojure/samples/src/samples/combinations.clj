@@ -1,5 +1,7 @@
 (ns samples.combinations)
 
+;; following along at home with Eric Norman's videos
+
 (defn  my-identity [x]
   x)
 
