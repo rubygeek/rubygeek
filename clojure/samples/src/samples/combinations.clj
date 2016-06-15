@@ -29,4 +29,8 @@
   (fn [x] 
     [(f x) (g x)]))
 
+(defn my-apply [f args]
+  (if (seq args)
+    (recur (partial f (first args)) (rest args))
+    (f)))
 

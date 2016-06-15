@@ -69,4 +69,9 @@
         theirs (juxt    inc str)  ]
     (is (= [6 "5"] (mine 5) (theirs 5) ))))
 
+;;-------------------------------------------
 
+(deftest my-apply-test
+  (let [mine (my-apply + [1 2 3]) 
+        theirs (apply + [1 2 3])]
+  (is (= 6 mine theirs))))
