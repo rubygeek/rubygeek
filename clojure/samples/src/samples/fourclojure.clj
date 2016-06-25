@@ -51,7 +51,7 @@
 ;;==============================================
 
 
-;;============= Prolem 166 =====================
+;;============= Problem 166 =====================
 
 (defn onesixsix [f x y]
   (if (= (f x y) (f y x))
@@ -65,5 +65,15 @@
     (f x y) :lt
     (f y x) :gt
     :else :eq))
+
+;;==============================================
+
+;;============= Problem 122 ====================
+
+(defn onetwotwo [num-str]
+  (reduce + (map-indexed #(* %2 (int (Math/pow 2 %1)))  (mapv #(Character/getNumericValue %) (reverse num-str)))))
+
+(defn better-onetwotwo [num-str]
+  (Integer/parseInt num-str 2))
 
 ;;==============================================
