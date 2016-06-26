@@ -77,3 +77,17 @@
   (Integer/parseInt num-str 2))
 
 ;;==============================================
+
+
+;;=========== Problem 65 =======================
+
+(defn sixfive [thing]
+  (let [str-thing (str (empty thing))]
+    (cond 
+      (= str-thing "[]")  :vector
+      (= str-thing "{}")  :map
+      (= str-thing "#{}") :set
+     :else 
+      :list)))
+
+;;==============================================
