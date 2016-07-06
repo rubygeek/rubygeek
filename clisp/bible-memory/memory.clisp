@@ -1,9 +1,29 @@
 
+;;(ql:quickload "split-sequence")
+
+
+;;; Tell the cl-user namespace to use the cl-utilities package
+(use-package :split-sequence)
+
+;;; Example of the split-sequence function usage
+;;(split-sequence #\Space "Hello I am Sam")
+
+
 (setq path (merge-pathnames "verse.txt"))
 
 (with-open-file (s path)
   (do
     ((l (read-line s) (read-line s nil 'eof)))
+    ;;(split-sequence:split-sequence #\Space l)
+    (split-sequence:SPLIT-SEQUENCE #\Space l)
     ((eq l 'eof) "Reached end of file.")
     (format t "~&*** ~A~%" l)))
-    
+
+
+
+
+
+
+
+
+

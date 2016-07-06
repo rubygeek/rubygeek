@@ -51,7 +51,7 @@
 ;;==============================================
 
 
-;;============= Prolem 166 =====================
+;;============= Problem 166 =====================
 
 (defn onesixsix [f x y]
   (if (= (f x y) (f y x))
@@ -65,5 +65,50 @@
     (f x y) :lt
     (f y x) :gt
     :else :eq))
+
+;;==============================================
+
+;;============= Problem 122 ====================
+
+(defn onetwotwo [num-str]
+  (reduce + (map-indexed #(* %2 (int (Math/pow 2 %1)))  (mapv #(Character/getNumericValue %) (reverse num-str)))))
+
+(defn better-onetwotwo [num-str]
+  (Integer/parseInt num-str 2))
+
+;;==============================================
+
+
+;;=========== Problem 65 =======================
+
+(defn sixfive [thing]
+  (let [str-thing (str (empty thing))]
+    (cond 
+      (= str-thing "[]")  :vector
+      (= str-thing "{}")  :map
+      (= str-thing "#{}") :set
+     :else 
+      :list)))
+
+;;==============================================
+
+;;============ Problem 59 ======================
+
+(defn fiftynine [& fs]
+  (fn [x]
+    (mapv (fn [f] (f x)) fs)))
+
+(comment 
+  this works for the first case 
+  (fn [& fs]
+   (fn [& xs]
+     (mapv #(reduce % xs) fs)))
+)
+
+(defn fiftynine-other [& fs]
+ (fn [& xs]
+   (mapv (fn [f]  (mapv f #(reduce % xs))) fs)))
+
+
 
 ;;==============================================

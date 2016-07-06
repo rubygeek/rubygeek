@@ -10,8 +10,8 @@
    [clojure.set :as set]
    [clojure.string :as str]
    [clojure.test :as test]
-   [samples.fourclojure :refer :all]
-   [clojure.tools.namespace.repl :refer [refresh refresh-all]]))
+   [clojure.tools.namespace.repl :refer [refresh refresh-all]]
+   [four-clojure]))
 
 (def system
   "A Var containing an object representing the application under
