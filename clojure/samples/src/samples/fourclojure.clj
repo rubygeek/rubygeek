@@ -91,3 +91,24 @@
       :list)))
 
 ;;==============================================
+
+;;============ Problem 59 ======================
+
+(defn fiftynine [& fs]
+  (fn [x]
+    (mapv (fn [f] (f x)) fs)))
+
+(comment 
+  this works for the first case 
+  (fn [& fs]
+   (fn [& xs]
+     (mapv #(reduce % xs) fs)))
+)
+
+(defn fiftynine-other [& fs]
+ (fn [& xs]
+   (mapv (fn [f]  (mapv f #(reduce % xs))) fs)))
+
+
+
+;;==============================================
