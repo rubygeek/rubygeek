@@ -1,6 +1,5 @@
 (ns samples.fourclojure)
 
-
 ;;============= Problem 26 ====================
 ;; not finished... 
 (defn twenty-six [len]
@@ -94,7 +93,7 @@
 
 ;;============ Problem 59 ======================
 
-(defn fiftynine [& fs]
+#_(defn fiftynine [& fs]
   (fn [x]
     (mapv (fn [f] (f x)) fs)))
 
@@ -105,10 +104,16 @@
      (mapv #(reduce % xs) fs)))
 )
 
-(defn fiftynine-other [& fs]
+#_(defn fiftynine-other [& fs]
  (fn [& xs]
    (mapv (fn [f]  (mapv f #(reduce % xs))) fs)))
 
 
 
 ;;==============================================
+
+
+(defn oneoneeight [f coll]
+  (if (empty? coll)
+    []
+    (conj (oneoneeight f (rest coll)) (f (first coll)))))
