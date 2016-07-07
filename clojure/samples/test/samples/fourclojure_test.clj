@@ -56,9 +56,18 @@
 
 ;;=================================================
 
+;;=================== Problem 26 ==================
+
+(deftest twentysix-test
+  (let [__ twenty-six]
+    (is (= (__ 3) '(1 1 2)))
+    (is (= (__ 6) '(1 1 2 3 5 8)))
+    (is (= (__ 8) '(1 1 2 3 5 8 13 21)))))
+
+
 ;;================= Problem 59 ====================
 
-(deftest fiftynine-test
+#_(deftest fiftynine-test
   (let [__ fiftynine-other]
     (is (= [21 6 1] ((__ + max min) 2 3 5 1 6 4)))
     (is (= ["HELLO" 5] ((__ #(.toUpperCase %) count) "hello")))

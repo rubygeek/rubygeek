@@ -2,14 +2,13 @@
 
 
 ;;============= Problem 26 ====================
-;; not finished... 
+
 (defn twenty-six [len]
   (loop [start 1
          acc [1 1]]
     (if (= len (count acc))
       acc
-      (conj acc (+ (last (butlast acc)) (last acc) ) ))
-  ))
+      (recur (inc start)  (conj acc (apply + (take-last 2 acc)))))))
 ;;=============================================
 
 ;;=========== Problem 34 ======================
