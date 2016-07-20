@@ -111,8 +111,22 @@
 
 ;;==============================================
 
+;; wip
+(comment 
+  (defn oneoneeight [f coll]
+    (loop [f f
+           acc []
+           coll coll]
+      (if (empty? coll)
+        []
+        (recur f (conj acc (f (first coll))) (rest coll))))))
 
-(defn oneoneeight [f coll]
-  (if (empty? coll)
-    []
-    (conj (oneoneeight f (rest coll)) (f (first coll)))))
+;;===============================================
+
+(defn ninenine [x y]
+  (loop [sum (* x y)
+         acc ()]
+  (if (< sum 10)
+    (conj acc sum)
+    (recur (int (/ sum 10)) (conj acc (mod sum 10))))
+))
