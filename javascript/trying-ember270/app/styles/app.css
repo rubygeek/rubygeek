@@ -8,3 +8,28 @@
   color: #555;
   background-color: #e7e7e7;
 }
+
+.songs .rating {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+.empty-list {
+  min-height: 100px;
+  text-align: center;
+}
+
+.empty-list .empty-message {
+  display: inline-block;
+  color: #555;
+  line-height: 100px;
+}
+
+.band-link .pointer {
+  float: right;
+  display: none;
+}
+
+.band-link.active .pointer {
+  display: block;
+}
