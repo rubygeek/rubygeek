@@ -1,4 +1,9 @@
 <ul class="list-group songs">
+  <li class="list-group-item songs">
+    {{input type="text" class="new-song" placeholder="New Song" value=title}}
+    <button class="btn btn-primary btn-sm new-song-button" {{action "createSong"}}>Add</button>
+  </li>
+
   {{#each model.songs as |song|}}
     <li class="list-group-item song">
       {{song.title}}
