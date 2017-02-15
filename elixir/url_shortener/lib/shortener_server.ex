@@ -1,8 +1,8 @@
 defmodule Shortener.Server do
   use GenServer
   
-  def start_link(opts \\ []) do
-    GenServer.start_link(__MODULE__, %{}, opts)
+  def start_link() do
+    GenServer.start_link(__MODULE__, %{}, [[name: __MODULE__]])
   end
 
   def init(state) do
@@ -29,6 +29,6 @@ defmodule Shortener.Server do
   end
 
   def handle_call({:url, short}, _from, state) do
-    {:reply, :ok, Map.fetch(state, short), state}
+    {:reply, Map.fetch(state, short), state}
   end
 end
