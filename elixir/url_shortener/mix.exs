@@ -4,7 +4,7 @@ defmodule BasicShortener.Mixfile do
   def project do
     [app: :basic_shortener,
      version: "0.1.0",
-     elixir: "~> 1.3",
+     elixir: "~> 1.4.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
