@@ -1,4 +1,4 @@
-defmodule ServerShortener do
+defmodule Shortener.Server do
   use GenServer
   
   def start_link(opts \\ []) do

@@ -2,7 +2,7 @@ defmodule ShortenerBasicTest do
   use ExUnit.Case
 
   setup do
-    {:ok, pid =  Shortener.Basic.start_link}
+    {:ok, pid: Shortener.Basic.start_link}
   end
  
   test "shortening a url", %{pid: pid} do
