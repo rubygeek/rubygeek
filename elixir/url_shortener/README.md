@@ -4,6 +4,8 @@ A simple use of OTP for practicing.
 
 Following along with this video: https://www.youtube.com/watch?v=_WgrfEaAM4Y
 
+Source code from the talk: https://github.com/rcdilorenzo/shortener
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
