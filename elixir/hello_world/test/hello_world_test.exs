@@ -2,7 +2,7 @@ defmodule HelloWorldTest do
   use ExUnit.Case
   doctest HelloWorld
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "hello returns hellow" do
+    assert HelloWorld.hello == :world
   end
 end
