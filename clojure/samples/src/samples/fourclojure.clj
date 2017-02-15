@@ -130,3 +130,12 @@
     (conj acc sum)
     (recur (int (/ sum 10)) (conj acc (mod sum 10))))
 ))
+
+;;===============================================
+
+(defn sixty-three [f s]
+  (loop [m {}
+         s s]
+   (if (seq s)
+     m   
+     (recur (update m (f (first s)) (first s)) (rest s) ))))
