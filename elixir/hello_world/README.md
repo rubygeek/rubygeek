@@ -1,6 +1,6 @@
 # HelloWorld
 
-**TODO: Add description**
+A simple application in elixir for practice.
 
 ## Installation
 
