@@ -1,0 +1,26 @@
+<h2>Listing weather info</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Temp</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for weather <- @weathers do %>
+    <tr>
+      <td><%= weather.temp %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: weather_path(@conn, :show, weather), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: weather_path(@conn, :edit, weather), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: weather_path(@conn, :delete, weather), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New weather", to: weather_path(@conn, :new) %>

@@ -1,0 +1,6 @@
+<h2>Edit weather</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: weather_path(@conn, :update, @weather) %>
+
+<%= link "Back", to: weather_path(@conn, :index) %>

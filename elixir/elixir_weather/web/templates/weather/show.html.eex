@@ -1,0 +1,13 @@
+<h2>Show weather</h2>
+
+<ul>
+
+  <li>
+    <strong>Temp:</strong>
+    <%= @weather.temp %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: weather_path(@conn, :edit, @weather) %>
+<%= link "Back", to: weather_path(@conn, :index) %>
