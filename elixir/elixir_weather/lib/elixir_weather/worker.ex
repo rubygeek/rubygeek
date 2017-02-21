@@ -13,7 +13,7 @@ defmodule ElixirWeather.Worker do
   end
 
   def handle_info(:work, state) do
-    IO.puts "Getting weather for austin" 
+    IO.puts "Getting weather from model" 
     Weather.store_temp("austin", "tx")
     schedule_work()
     {:noreply, state}

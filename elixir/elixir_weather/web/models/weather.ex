@@ -22,6 +22,7 @@ defmodule ElixirWeather.Weather do
   end
 
   def fetch(city, state) do
+   IO.puts "Starting to fetch weather"
     case HTTPoison.get "http://api.wunderground.com/api/#{@client_key}/conditions/q/#{state}/#{city}.json" do
       {:ok, response} ->
         Poison.decode!(response.body)["current_observation"]
