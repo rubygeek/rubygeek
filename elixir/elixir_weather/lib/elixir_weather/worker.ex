@@ -4,7 +4,7 @@ defmodule ElixirWeather.Worker do
   alias ElixirWeather.Weather
 
   def start_link do
-    GenServer.start_link(__MODULE__, %{})
+    GenServer.start_link(__MODULE__, %{}, [name: __MODULE__])
   end
 
   def init(state) do
@@ -16,12 +16,11 @@ defmodule ElixirWeather.Worker do
     IO.puts "Getting weather for austin" 
     Weather.store_temp("austin", "tx")
     schedule_work()
-    {:no_reply, state}
+    {:noreply, state}
   end
 
-  defp schedule_work() do
-    hours = 0.5
-    Process.send_after(self(), :work, hours * 60 * 60 * 1000)
+  defp schedule_work() do  
+    Process.send_after(self(), :work, 1 * 60 * 60 * 1000)
   end
   
 end
