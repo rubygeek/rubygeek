@@ -20,8 +20,7 @@ defmodule ElixirWeather.Worker do
   end
 
   defp schedule_work() do
-    hours = 0.5
-    Process.send_after(self(), :work, hours * 60 * 60 * 1000)
+    Process.send_after(self(), :work, 15 * 60 * 1000)
   end
   
 end
