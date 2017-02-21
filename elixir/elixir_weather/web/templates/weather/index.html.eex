@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>Temp</th>
-
+      <th>Updated</th>
       <th></th>
     </tr>
   </thead>
@@ -12,6 +12,7 @@
 <%= for weather <- @weathers do %>
     <tr>
       <td><%= weather.temp %></td>
+      <td><%= weather.updated_at |> Timex.format!("{M}/{D} {h24}:{m}") %></td>
 
       <td class="text-right">
         <%= link "Show", to: weather_path(@conn, :show, weather), class: "btn btn-default btn-xs" %>

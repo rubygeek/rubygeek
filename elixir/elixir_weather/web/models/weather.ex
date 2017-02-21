@@ -1,8 +1,10 @@
 defmodule ElixirWeather.Weather do
   use ElixirWeather.Web, :model
+  use Timex
+
   alias ElixirWeather.Repo
 
-  @client_key "6247edb222be5475"
+  @client_key System.get_env("WEATHER_UNDERGROUND_KEY")
 
   schema "weathers" do
     field :temp, :string
