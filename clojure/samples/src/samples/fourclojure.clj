@@ -149,7 +149,7 @@
 ;;===============================================
 
 (defn thirty-three [coll cnt]
-  (mapcat conj
+  (mapcat concat
     (for [a coll]  (repeat cnt a))))
 
 ;;===============================================
