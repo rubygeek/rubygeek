@@ -1,0 +1,350 @@
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.459 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.883 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.373 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:26  column:1  ----[0m
+
+  [1mcount already refers to: cljs.core/count being replaced by: try-devcards-rum.core/count[0m
+
+  [36m23[0m  [36m(rum/defc label [text][0m
+  [36m24[0m  [36m  [:div {class "label"} text])[0m
+  [36m25[0m  [36m[0m
+  [33m26[0m  [1m(def count (atom 0))[0m
+  [0m  [0m  [33m^--- count already refers to: cljs.core/count being replaced by: try-devcards-rum.core/count[0m
+  [36m27[0m  [36m[0m
+  [36m28[0m  [36m(rum/defc counter < rum/reactive [][0m
+  [36m29[0m  [36m  [:div {:on-click (fn [_] (swap! count inc))}[0m
+  [36m30[0m  [36m   "Clicks! " (rum/react count)])[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.412 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.374 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.371 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.378 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.363 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.354 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.346 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:41  column:4  ----[0m
+
+  [1mUse of undeclared Var try-devcards-rum.core/testing[0m
+
+  [36m37[0m  [36m                   (str first-name ", DOE"))[0m
+  [36m38[0m  [36m                  ([first-name last-name][0m
+  [36m39[0m  [36m                   (str last-name ", " first-name)))[0m
+  [36m40[0m  [36m(deftest test[0m
+  [33m41[0m  [1m  (testing[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var try-devcards-rum.core/testing[0m
+  [36m42[0m  [36m      (is (= (format-name "nola" "stowe")))[0m
+  [36m43[0m  [36m      (is (= (format-name "nola")))[0m
+  [36m44[0m  [36m    ))[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m(defn main [][0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:42  column:8  ----[0m
+
+  [1mUse of undeclared Var try-devcards-rum.core/is[0m
+
+  [36m38[0m  [36m                  ([first-name last-name][0m
+  [36m39[0m  [36m                   (str last-name ", " first-name)))[0m
+  [36m40[0m  [36m(deftest test[0m
+  [36m41[0m  [36m  (testing[0m
+  [33m42[0m  [1m      (is (= (format-name "nola" "stowe")))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var try-devcards-rum.core/is[0m
+  [36m43[0m  [36m      (is (= (format-name "nola")))[0m
+  [36m44[0m  [36m    ))[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m(defn main [][0m
+  [36m47[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:43  column:8  ----[0m
+
+  [1mUse of undeclared Var try-devcards-rum.core/is[0m
+
+  [36m39[0m  [36m                   (str last-name ", " first-name)))[0m
+  [36m40[0m  [36m(deftest test[0m
+  [36m41[0m  [36m  (testing[0m
+  [36m42[0m  [36m      (is (= (format-name "nola" "stowe")))[0m
+  [33m43[0m  [1m      (is (= (format-name "nola")))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var try-devcards-rum.core/is[0m
+  [36m44[0m  [36m    ))[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m(defn main [][0m
+  [36m47[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m48[0m  [36m  ;; node is on the page[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:40  column:1  ----[0m
+
+  [1mtest already refers to: cljs.core/test being replaced by: try-devcards-rum.core/test[0m
+
+  [36m36[0m  [36m(defn format-name ([first-name][0m
+  [36m37[0m  [36m                   (str first-name ", DOE"))[0m
+  [36m38[0m  [36m                  ([first-name last-name][0m
+  [36m39[0m  [36m                   (str last-name ", " first-name)))[0m
+  [33m40[0m  [1m(deftest test[0m
+  [0m  [0m  [33m^--- test already refers to: cljs.core/test being replaced by: try-devcards-rum.core/test[0m
+  [36m41[0m  [36m  (testing[0m
+  [36m42[0m  [36m      (is (= (format-name "nola" "stowe")))[0m
+  [36m43[0m  [36m      (is (= (format-name "nola")))[0m
+  [36m44[0m  [36m    ))[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:41  column:4  ----[0m
+
+  [1mUse of undeclared Var try-devcards-rum.core/testing[0m
+
+  [36m37[0m  [36m                   (str first-name ", DOE"))[0m
+  [36m38[0m  [36m                  ([first-name last-name][0m
+  [36m39[0m  [36m                   (str last-name ", " first-name)))[0m
+  [36m40[0m  [36m(deftest test[0m
+  [33m41[0m  [1m  (testing[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var try-devcards-rum.core/testing[0m
+  [36m42[0m  [36m      (is (= (format-name "nola" "stowe")))[0m
+  [36m43[0m  [36m      (is (= (format-name "nola")))[0m
+  [36m44[0m  [36m    ))[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m(defn main [][0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:42  column:8  ----[0m
+
+  [1mUse of undeclared Var try-devcards-rum.core/is[0m
+
+  [36m38[0m  [36m                  ([first-name last-name][0m
+  [36m39[0m  [36m                   (str last-name ", " first-name)))[0m
+  [36m40[0m  [36m(deftest test[0m
+  [36m41[0m  [36m  (testing[0m
+  [33m42[0m  [1m      (is (= (format-name "nola" "stowe")))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var try-devcards-rum.core/is[0m
+  [36m43[0m  [36m      (is (= (format-name "nola")))[0m
+  [36m44[0m  [36m    ))[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m(defn main [][0m
+  [36m47[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:43  column:8  ----[0m
+
+  [1mUse of undeclared Var try-devcards-rum.core/is[0m
+
+  [36m39[0m  [36m                   (str last-name ", " first-name)))[0m
+  [36m40[0m  [36m(deftest test[0m
+  [36m41[0m  [36m  (testing[0m
+  [36m42[0m  [36m      (is (= (format-name "nola" "stowe")))[0m
+  [33m43[0m  [1m      (is (= (format-name "nola")))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var try-devcards-rum.core/is[0m
+  [36m44[0m  [36m    ))[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m(defn main [][0m
+  [36m47[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m48[0m  [36m  ;; node is on the page[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 1.223 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:42  column:1  ----[0m
+
+  [1mtest already refers to: cljs.core/test being replaced by: try-devcards-rum.core/test[0m
+
+  [36m38[0m  [36m(defn format-name ([first-name][0m
+  [36m39[0m  [36m                   (str first-name ", DOE"))[0m
+  [36m40[0m  [36m                  ([first-name last-name][0m
+  [36m41[0m  [36m                   (str last-name ", " first-name)))[0m
+  [33m42[0m  [1m(deftest test[0m
+  [0m  [0m  [33m^--- test already refers to: cljs.core/test being replaced by: try-devcards-rum.core/test[0m
+  [36m43[0m  [36m  (testing[0m
+  [36m44[0m  [36m      (is (= (format-name "nola" "stowe")))[0m
+  [36m45[0m  [36m      (is (= (format-name "nola")))[0m
+  [36m46[0m  [36m    ))[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.869 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:33  column:1  ----[0m
+
+  [1mtest already refers to: cljs.core/test being replaced by: try-devcards-rum.core/test[0m
+
+  [36m29[0m  [36m(defn format-name ([first-name][0m
+  [36m30[0m  [36m                   (str first-name ", DOE"))[0m
+  [36m31[0m  [36m                  ([first-name last-name][0m
+  [36m32[0m  [36m                   (str last-name ", " first-name)))[0m
+  [33m33[0m  [1m(deftest test[0m
+  [0m  [0m  [33m^--- test already refers to: cljs.core/test being replaced by: try-devcards-rum.core/test[0m
+  [36m34[0m  [36m  (testing[0m
+  [36m35[0m  [36m      (is (= (format-name "nola" "stowe")))[0m
+  [36m36[0m  [36m      (is (= (format-name "nola")))[0m
+  [36m37[0m  [36m    ))[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:43  column:27  ----[0m
+
+  [1mNo such namespace: sab, could not locate sab.cljs, sab.cljc, or Closure namespace ""[0m
+
+  [36m39[0m  [36m(defn main [][0m
+  [36m40[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m41[0m  [36m  ;; node is on the page[0m
+  [36m42[0m  [36m  (if-let [node (.getElementById js/document "main-app-area")][0m
+  [33m43[0m  [1m    (.render js/ReactDOM (sab/html [:div "This is working"]) node)))[0m
+  [0m  [0m  [33m                          ^--- No such namespace: sab, could not locate sab.cljs, sab.cljc, or Closure namespace ""[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(main)[0m
+  [36m46[0m  [36m[0m
+  [36m47[0m  [36m;; remember to run lein figwheel and then browse to[0m
+  [36m48[0m  [36m;; http://localhost:3449/cards.html[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:43  column:27  ----[0m
+
+  [1mUse of undeclared Var sab/html[0m
+
+  [36m39[0m  [36m(defn main [][0m
+  [36m40[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m41[0m  [36m  ;; node is on the page[0m
+  [36m42[0m  [36m  (if-let [node (.getElementById js/document "main-app-area")][0m
+  [33m43[0m  [1m    (.render js/ReactDOM (sab/html [:div "This is working"]) node)))[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var sab/html[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(main)[0m
+  [36m46[0m  [36m[0m
+  [36m47[0m  [36m;; remember to run lein figwheel and then browse to[0m
+  [36m48[0m  [36m;; http://localhost:3449/cards.html[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.56 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:43  column:27  ----[0m
+
+  [1mNo such namespace: sab, could not locate sab.cljs, sab.cljc, or Closure namespace ""[0m
+
+  [36m39[0m  [36m(defn main [][0m
+  [36m40[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m41[0m  [36m  ;; node is on the page[0m
+  [36m42[0m  [36m  (if-let [node (.getElementById js/document "main-app-area")][0m
+  [33m43[0m  [1m    (.render js/ReactDOM (sab/html [:div "This is working"]) node)))[0m
+  [0m  [0m  [33m                          ^--- No such namespace: sab, could not locate sab.cljs, sab.cljc, or Closure namespace ""[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(main)[0m
+  [36m46[0m  [36m[0m
+  [36m47[0m  [36m;; remember to run lein figwheel and then browse to[0m
+  [36m48[0m  [36m;; http://localhost:3449/cards.html[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:43  column:27  ----[0m
+
+  [1mUse of undeclared Var sab/html[0m
+
+  [36m39[0m  [36m(defn main [][0m
+  [36m40[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m41[0m  [36m  ;; node is on the page[0m
+  [36m42[0m  [36m  (if-let [node (.getElementById js/document "main-app-area")][0m
+  [33m43[0m  [1m    (.render js/ReactDOM (sab/html [:div "This is working"]) node)))[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var sab/html[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(main)[0m
+  [36m46[0m  [36m[0m
+  [36m47[0m  [36m;; remember to run lein figwheel and then browse to[0m
+  [36m48[0m  [36m;; http://localhost:3449/cards.html[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.433 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:44  column:27  ----[0m
+
+  [1mNo such namespace: sab, could not locate sab.cljs, sab.cljc, or Closure namespace ""[0m
+
+  [36m40[0m  [36m(defn main [][0m
+  [36m41[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m42[0m  [36m  ;; node is on the page[0m
+  [36m43[0m  [36m  (if-let [node (.getElementById js/document "main-app-area")][0m
+  [33m44[0m  [1m    (.render js/ReactDOM (sab/html [:div "This is working"]) node)))[0m
+  [0m  [0m  [33m                          ^--- No such namespace: sab, could not locate sab.cljs, sab.cljc, or Closure namespace ""[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m(main)[0m
+  [36m47[0m  [36m[0m
+  [36m48[0m  [36m;; remember to run lein figwheel and then browse to[0m
+  [36m49[0m  [36m;; http://localhost:3449/cards.html[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/try_devcards_rum/core.cljs   line:44  column:27  ----[0m
+
+  [1mUse of undeclared Var sab/html[0m
+
+  [36m40[0m  [36m(defn main [][0m
+  [36m41[0m  [36m  ;; conditionally start the app based on whether the #main-app-area[0m
+  [36m42[0m  [36m  ;; node is on the page[0m
+  [36m43[0m  [36m  (if-let [node (.getElementById js/document "main-app-area")][0m
+  [33m44[0m  [1m    (.render js/ReactDOM (sab/html [:div "This is working"]) node)))[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var sab/html[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m(main)[0m
+  [36m47[0m  [36m[0m
+  [36m48[0m  [36m;; remember to run lein figwheel and then browse to[0m
+  [36m49[0m  [36m;; http://localhost:3449/cards.html[0m
+
+[36m----  Compiler Warning : Please see src/try_devcards_rum/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.474 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.374 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.399 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.382 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.42 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.402 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.411 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.394 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.386 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.428 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.38 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.389 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
