@@ -348,3 +348,8 @@ notifying browser that file changed:  resources/public/js/compiled/devcards_out/
 [0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
 [32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.389 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.656 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
