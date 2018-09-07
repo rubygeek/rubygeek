@@ -1,6 +1,0 @@
-(ns shapes.core-test
-  (:require [clojure.test :refer [is testing deftest]]
-            [shapes.core :as shape]))
-
-(deftest create-circle
-  (is (= :Circle (:Shape (shape/build-circle 10)))))
