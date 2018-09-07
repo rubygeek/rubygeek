@@ -1,5 +1,6 @@
 # Trying out Multimethods
 
+## Start a REPL
 ``` shell
 
 ▶ clj
@@ -16,4 +17,10 @@ Then create objects with the helper methods and call area on them.
 (area r)
 ```
 
+
+## Running Tests
+
+``` shell
+clojure -Atest
+```
 

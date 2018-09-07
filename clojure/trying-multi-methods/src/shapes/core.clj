@@ -2,11 +2,11 @@
 
 (defmulti area :Shape)
 
-(defmethod area :Rect [r]
-    (* (:wd r) (:ht r)))
+(defmethod area :Rect [s]
+    (* (:wd s) (:ht s) 1.0))
 
-(defmethod area :Circle [c]
-    (* (. Math PI) (* (:radius c) (:radius c))))
+(defmethod area :Circle [s]
+    (* (. Math PI) (* (:radius s) (:radius s))))
 
 (defmethod area :Triangle [s]
   (* (:b s) (:h s) 0.5) )
@@ -19,7 +19,4 @@
 (defn build-circle [radius] {:Shape :Circle :radius radius})
 (defn build-triangle [b h]  {:Shape :Triangle :b b :h h})
 
-
-(defn -main []
-  (println "Hello, World!"))
 
