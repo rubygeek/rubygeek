@@ -43,6 +43,8 @@
       (is (= "stowe, nola" (format-name "nola" "stowe")) "testing first and last name")
       (is (= "DOE, nola"   (format-name "nola"))         "Only a first name")
       (is (= true false)                                 "This is false on purpose")
+      (is (= 3 (+ 1 2)))
+      (is (= 4 (+ 1 3)) "adding 1 and 3")
     ))
 
 (defcard running-tests
