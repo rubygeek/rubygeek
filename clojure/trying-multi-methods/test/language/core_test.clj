@@ -13,5 +13,5 @@
   (let [one (lang/make-english "one")
         uno (lang/make-spanish "uno")]
     (testing
-        (is (= "uno" (:word (lang/translate one))))
-        (is (= "one" (:word (lang/translate uno)))))))
+        (is (=  (lang/translate one) "uno"))
+        (is (=  (lang/translate uno) "one")))))

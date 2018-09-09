@@ -9,13 +9,16 @@
              "tres" "three"})
 
 
-(defmulti translate :Lanaguage)
+(defmulti translate :Language)
 
-(defmethod translate :Spanish [word]
-  en->es[word])
+(defmethod translate :Spanish [w]
+  (get es->en (:word w)))
 
-(defmethod translate :English [word]
-  es->en[word])
+(defmethod translate :English [w]
+  (get en->es (:word w)))
+
+(defmethod translate :default [x] :oops)
+
 
 (defn make-spanish [word]
   {:Language :Spanish :word word})
