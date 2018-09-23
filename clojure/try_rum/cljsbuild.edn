@@ -1,0 +1,6 @@
+{:main          "weather.client"
+ :output-dir    "resources/public/cljs"
+ :output-to     "resources/public/cljs/app.js"
+ :source-map    "resources/public/cljs/app.js.map"
+ :optimizations :advanced
+ :pretty-print  false}

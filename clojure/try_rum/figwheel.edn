@@ -1,0 +1,17 @@
+{:nrepl-port       7000
+ :nrepl-middleware ["cider.nrepl/cider-middleware"
+                    "cemerick.piggieback/wrap-cljs-repl"]
+ :server-port      3000
+ :ring-handler     weather.handler/development-app
+ :http-server-root "public"
+ :css-dirs         ["resources/public/css"]
+ :builds [{:id           "dev"
+           :source-paths ["src/cljs"]
+           :figwheel     {:on-jsload "weather.client/mount-root"}
+           :compiler     {:main          "weather.client"
+                          :output-dir    "resources/public/cljs/out"
+                          :output-to     "resources/public/cljs/app.js"
+                          :asset-path    "/cljs/out"
+                          :source-map    true
+                          :optimizations :none
+                          :pretty-print  true}}]}

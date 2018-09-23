@@ -1,0 +1,18 @@
+{:paths ["src/clj" "src/cljs" "resources"]
+
+ :deps {org.clojure/clojure       {:mvn/version "1.9.0"}
+        org.clojure/clojurescript {:mvn/version "1.10.312"}
+        ring                      {:mvn/version "1.7.0-RC1"}
+        ring/ring-json            {:mvn/version "0.4.0"}
+        ring/ring-defaults        {:mvn/version "0.3.2"}
+        prone                     {:mvn/version "1.6.0"}
+        compojure                 {:mvn/version "1.6.1"}
+        rum                       {:mvn/version "0.11.2"}}
+
+ :aliases {:run        {:main-opts ["-m" "weather.server"]}
+           :cljsbuild  {:main-opts ["-m" "cljs.main" "-co" "cljsbuild.edn" "-c"]}
+           :figwheel   {:extra-deps {org.clojure/tools.nrepl {:mvn/version "0.2.13"}
+                                     cider/cider-nrepl       {:mvn/version "0.17.0"}
+                                     com.cemerick/piggieback {:mvn/version "0.2.2"}
+                                     figwheel-sidecar        {:mvn/version "0.5.14"}}
+                        :main-opts ["-e" "(use,'figwheel-sidecar.repl-api),(start-figwheel!)"]}}}
