@@ -8,3 +8,4 @@ ruby/trying_sinatra/sample/*
 *.swp
 .idea
 project_euler/*
+.cpcache
