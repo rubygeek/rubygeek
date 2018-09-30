@@ -1,0 +1,14 @@
+import React, { PropTypes } from "react";
+
+export default class Scoreboard extends React.Component {
+    render(
+            <div>
+            <h2>Scores</h2>
+	    <ol>
+            <li> score 1 </li>
+	    <li> score 2 </li>
+	    </ol>
+       	    </div>
+    );
+
+}
