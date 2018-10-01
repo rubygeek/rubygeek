@@ -1,0 +1,7 @@
+[
+  {:db/ident  :recipe/name
+   :db/type    "text"}
+
+  {:db/ident  :recipe/url
+   :db/type  "text"}
+]

@@ -1,0 +1,6 @@
+{:recipe/name #:db{:type "text"},
+ :recipe/url #:db{:type "text"},
+ :rels #{},
+ :cols #{},
+ :idents #{:recipe/url :recipe/id :recipe/name},
+ :joins {}}
