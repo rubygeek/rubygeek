@@ -9,6 +9,13 @@
 
 (enable-console-print!)
 
+(defcard documentation-card
+  "
+  ## A documendation Card
+  * taco
+  * beer 
+  ")
+
 
 ;; just a label
 
@@ -17,7 +24,7 @@
 
 
 (defcard rum-card
-  (label "foobar"))
+  (label "fried chicken taco is the best"))
 
 
 ;; counter 
