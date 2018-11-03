@@ -4,7 +4,7 @@
 (def tasks (atom []))
 
 (defn todo []
-  (map println tasks))
+  (map println @tasks))
 
 
 
