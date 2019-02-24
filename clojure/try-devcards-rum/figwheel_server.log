@@ -383,3 +383,28 @@ notifying browser that file changed:  resources/public/js/compiled/devcards_out/
 [0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
 [32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.419 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.414 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.359 seconds.[0m
+[36m----  Could not Analyze  src/try_devcards_rum/core.cljs  ----[0m
+
+  [1mInvalid :refer, macro devcards.core/devdoc does not exist [0m
+
+[36m----  Analysis Error : Please see src/try_devcards_rum/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.24 seconds.[0m
+[36m----  Could not Analyze  src/try_devcards_rum/core.cljs  ----[0m
+
+  [1mInvalid :refer, macro devcards.core/defdoc does not exist [0m
+
+[36m----  Analysis Error : Please see src/try_devcards_rum/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.455 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js
+[0mCompiling "resources/public/js/compiled/try_devcards_rum_devcards.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/try_devcards_rum_devcards.js" in 0.383 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/devcards_out/try_devcards_rum/core.js

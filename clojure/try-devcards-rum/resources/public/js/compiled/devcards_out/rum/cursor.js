@@ -145,4 +145,4 @@ return (new rum.cursor.Cursor(ref,path,meta));
 });
 
 
-//# sourceMappingURL=cursor.js.map?rel=1533225033577
+//# sourceMappingURL=cursor.js.map?rel=1538702795055
