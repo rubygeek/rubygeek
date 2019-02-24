@@ -7,6 +7,7 @@
         ring/ring-defaults        {:mvn/version "0.3.2"}
         prone                     {:mvn/version "1.6.0"}
         compojure                 {:mvn/version "1.6.1"}
+        cljsjs/enzyme             {:mvn/version "3.0.0"}
         rum                       {:mvn/version "0.11.2"}}
 
  :aliases {:run        {:main-opts ["-m" "weather.server"]}
