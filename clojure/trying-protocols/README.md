@@ -37,7 +37,7 @@ not exactly 1 to 1
    end
  end
 
-cake = Recipe.new
-cake.mix("stainless bowl")
-cake.bake("300" "10")
+dessert = Dessert.new
+dessert.mix("stainless bowl")
+dessert.bake("300" "10")
 ```
