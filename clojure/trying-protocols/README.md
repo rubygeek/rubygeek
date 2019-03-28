@@ -15,9 +15,19 @@
 ```
 
 ### in ruby (for comparison)
+not exactly 1 to 1 
 
+ 
 ```ruby
  class Recipe
+   def mix(bowl)
+   end
+
+   def bake(temp time)
+   end
+ end
+
+ class Dessert < Recipe
    def mix(bowl)
      "Mixing in " + bowl
    end
