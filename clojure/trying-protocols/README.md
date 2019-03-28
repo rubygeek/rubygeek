@@ -1,9 +1,9 @@
 ## Trying Protocols
 
 
-using in clojure:
+### using in clojure:
 
-```
+```clojure
  user=> (require '[trying-protocols.core :refer :all])
  nil
  user=> (def dessert (cake))
@@ -14,12 +14,9 @@ using in clojure:
  "bake in 400 for 10 minutes"
 ```
 
-;; in ruby
+### in ruby (for comparison)
 
-```
-
-
-
+```ruby
  class Recipe
    def mix(bowl)
      "Mixing in " + bowl
