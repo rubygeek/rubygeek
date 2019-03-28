@@ -22,7 +22,7 @@
      "Mixing in " + bowl
    end
 
-   def bake (temp time)
+   def bake(temp time)
      "bake in " + temp + " for " + time + " mins" 
    end
  end
