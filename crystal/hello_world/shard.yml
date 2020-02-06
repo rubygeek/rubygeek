@@ -1,0 +1,13 @@
+name: hello_world
+version: 0.1.0
+
+authors:
+  - Nola Stowe <nola@rubygeek.com>
+
+targets:
+  hello_world:
+    main: src/hello_world.cr
+
+crystal: 0.32.1
+
+license: MIT
