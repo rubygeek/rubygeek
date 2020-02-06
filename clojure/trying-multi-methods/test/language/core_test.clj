@@ -15,3 +15,6 @@
     (testing
         (is (=  (lang/translate one) "uno"))
         (is (=  (lang/translate uno) "one")))))
+
+(deftest test-default
+  (is (= (lang/translate "taco") :oops)))
