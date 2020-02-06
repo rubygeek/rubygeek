@@ -153,3 +153,14 @@
     (for [a coll]  (repeat cnt a))))
 
 ;;===============================================
+
+(defn divable [n by]
+  (zero? (mod n by)))
+
+(defn sixsix [x y]
+  (let [mn (min x y)
+        mx (max x y)
+        rg (range mn (inc mx))]
+    (apply max  (remove nil? (for [i rg]
+                               (when (zero? (mod mx i))
+                                 i   ))))))
