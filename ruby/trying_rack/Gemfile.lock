@@ -5,7 +5,7 @@ GEM
     linecache (0.46)
       rbx-require-relative (> 0.0.4)
     minitest (2.10.1)
-    rack (1.4.0)
+    rack (2.1.4)
     rbx-require-relative (0.0.5)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
