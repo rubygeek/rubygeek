@@ -10,7 +10,7 @@ GEM
     columnize (0.3.4)
     configliere (0.4.8)
       json
-    json (1.6.1)
+    json (2.3.1)
     linecache (0.46)
       rbx-require-relative (> 0.0.4)
     mime-types (1.16)
