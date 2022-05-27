@@ -45,7 +45,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     polyglot (0.3.3)
-    rack (1.2.5)
+    rack (1.2.8)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
     rack-test (0.5.7)
